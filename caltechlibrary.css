@@ -397,8 +397,8 @@ body.theme-caltech {
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:nth-child(2) {
   margin-bottom: 0;
 }
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article a {
-  word-wrap: break-word;
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article > a:last-of-type {
+  display: none;
 }
 
 /**
