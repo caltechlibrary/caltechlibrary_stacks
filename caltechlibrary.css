@@ -84,6 +84,9 @@
 body.theme-caltech {
   font-family: 'Vaud', Arial, sans-serif;
 }
+.theme-caltech button {
+  font-family: 'Vaud', Arial, sans-serif;
+}
 .theme-caltech h1,
 .theme-caltech h2,
 .theme-caltech h3,
