@@ -103,7 +103,12 @@ body.theme-caltech {
 .theme-caltech a.normal-text:hover {
   border-bottom: 1px dotted;
 }
-
+.theme-caltech .item-list a.active {
+  color: rgb(255, 114, 12);
+}
+.theme-caltech .not-front .main-content > div > .content {
+  margin-bottom: 0.9375rem;
+}
 /**
  * LOCATION BAR
  *
@@ -343,6 +348,13 @@ body.theme-caltech {
 }
 .theme-caltech .view-quick-links .views-field.link-icon img {
   width: 16px;
+}
+
+/**
+ * Services
+ */
+.theme-caltech .view-home-services li {
+  padding-bottom: 0;
 }
 
 /**
