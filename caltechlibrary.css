@@ -1,0 +1,387 @@
+/**
+ * FONTS
+ */
+@font-face {
+  font-family: 'LTCCaslonLong';
+  src: url('/sites/default/files/fonts/LTCCaslonLongWeb.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/LTCCaslonLongWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/LTCCaslonLongWeb.woff') format('woff'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KievitSlabMedium';
+  src: url('/sites/default/files/fonts/KievitSlabWebPro-Medium.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/KievitSlabWebPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/KievitSlabWebPro-Medium.woff') format('woff'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vaud';
+  src: url('/sites/default/files/fonts/VaudBook-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/VaudBook-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/VaudBook-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/sites/default/files/fonts/VaudBook-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/sites/default/files/fonts/VaudBook-webfont.svg#vaudregular') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vaud';
+  src: url('/sites/default/files/fonts/VaudBookIt-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/VaudBookIt-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/VaudBookIt-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/sites/default/files/fonts/VaudBookIt-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/sites/default/files/fonts/VaudBookIt-webfont.svg#vauditalic') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Vaud';
+  src: url('/sites/default/files/fonts/VaudUltra-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/VaudUltra-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/VaudUltra-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/sites/default/files/fonts/VaudUltra-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/sites/default/files/fonts/VaudUltra-webfont.svg#vaudregular') format('svg'); /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vaud';
+  src: url('/sites/default/files/fonts/VaudUltraIt-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/VaudUltraIt-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/VaudUltraIt-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/sites/default/files/fonts/VaudUltraIt-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/sites/default/files/fonts/VaudUltraIt-webfont.svg#vauditalic') format('svg'); /* Legacy iOS */
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'VaudMedium';
+  src: url('/sites/default/files/fonts/VaudExtraBold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/VaudExtraBold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/VaudExtraBold-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/sites/default/files/fonts/VaudExtraBold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/sites/default/files/fonts/VaudExtraBold-webfont.svg#vaudregular') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VaudMedium';
+  src: url('/sites/default/files/fonts/VaudExtraBoldIt-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/sites/default/files/fonts/VaudExtraBoldIt-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/sites/default/files/fonts/VaudExtraBoldIt-webfont.woff') format('woff'), /* Modern Browsers */
+       url('/sites/default/files/fonts/VaudExtraBoldIt-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/sites/default/files/fonts/VaudExtraBoldIt-webfont.svg#vaudregular') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+
+/**
+ * GENERAL
+ */
+body.theme-caltech {
+  font-family: 'Vaud', Arial, sans-serif;
+}
+.theme-caltech h1,
+.theme-caltech h2,
+.theme-caltech h3,
+.theme-caltech h4,
+.theme-caltech h5,
+.theme-caltech h6 {
+  font-family: 'KievitSlabMedium', Georgia, serif;
+}
+.theme-caltech a.normal-text {
+  color: rgb(68, 68, 68);
+}
+.theme-caltech a.normal-text:active,
+.theme-caltech a.normal-text:focus,
+.theme-caltech a.normal-text:hover {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * LOCATION BAR
+ *
+ * The Location Bar is enabled in the theme, but completely hidden here so that
+ * the modal window code is still available for the links from the view we are
+ * using to replace it. It is much easier to style two blocks that are both in
+ * the Top Header region than the Location Bar and a Top Header region.
+ */
+.theme-caltech .location-bar {
+  display: none;
+}
+
+/**
+ * LOCATION MODAL
+ */
+.theme-caltech #modal-all-locations .email {
+  display: none;
+}
+
+/**
+ * TOP HEADER
+ */
+.theme-caltech #top-header {
+  background: #76777b;
+  color: white;
+  display: block;
+  overflow: hidden;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+}
+.theme-caltech #top-header .view-hours-today .views-field-hours {
+  padding-left: 0.375em;
+}
+/**
+ * Normally the .inline-list class would be added to the UL tags, but we cannot
+ * add those without theme functions. Instead all the styles from Foundation
+ * inline lists have been added here to the UL tags.
+ */
+.theme-caltech #top-header #block-menu-menu-top-menu ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  margin-left: 0.9375rem;
+  margin-right: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.theme-caltech #top-header #block-menu-menu-top-menu ul > li {
+  display: block;
+  float: left;
+  list-style: none;
+  padding-top: 1px;
+}
+.theme-caltech #top-header #block-menu-menu-top-menu .last {
+  padding-right: 0;
+}
+.theme-caltech #top-header a {
+  color: white;
+  font-size: 0.75rem;
+}
+.theme-caltech #top-header .libchat_online,
+.theme-caltech #top-header .libchat_offline {
+  border: 0 !important;
+  padding: 0 !important;
+  font-size: 0.75rem;
+}
+
+/**
+ * HEADER
+ *
+ * It seems that there is a bug in the theme. This fixes the mobile menu icon
+ * which was not clearing the Location Bar or Top Header region.
+ */
+.theme-caltech #header .header-row .section {
+  position: relative;
+}
+
+/**
+ * MAIN MENU
+ */
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
+  color: rgb(105, 107, 115);
+  font-family: 'KievitSlabMedium', Georgia, serif;
+  font-size: large;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li a {
+  padding: 5px 10px;
+}
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li hr {
+  margin: 5px 0;
+}
+
+/**
+ * SEARCH
+ */
+.theme-caltech #search .block-hf-stacks-search {
+  background-color: #00afab;
+}
+.theme-caltech #search .block-hf-stacks-search .selectWrapper {
+  display: none;
+}
+.theme-caltech #search .block-hf-stacks-search #searchBox {
+  margin-bottom: 0;
+}
+.theme-caltech #search .block-hf-stacks-search #searchSubmit {
+  margin-bottom: 0;
+}
+
+/**
+ * Search Resources
+ */
+.theme-caltech .view-home-search-resources ul {
+  font-size: larger;
+  padding-top: 1.25rem;
+}
+
+/**
+ * HOME PANEL
+ */
+.panels-flexible-region .pane-custom {
+  margin-bottom: 2.45rem;
+}
+.theme-caltech .panel-flexible.home .panels-flexible-region-inside {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (min-width: 641px) {
+  .theme-caltech .panel-flexible.home .panels-flexible-region-inside {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .theme-caltech .panel-flexible.home .panels-flexible-region-inside-first {
+    padding-left: 0;
+  }
+  .theme-caltech .panel-flexible.home .panels-flexible-region-inside-last {
+    padding-right: 0;
+  }
+}
+.theme-caltech .panel-flexible.home .blk-title {
+  animation: none;
+}
+.theme-caltech .panel-flexible.home .block-border .blk-title {
+  border: 1px solid rgb(200, 200, 200);
+  margin: 0;
+  padding: 0.813rem;
+}
+.theme-caltech .panel-flexible.home .block-border .blk-title::after {
+  content: none;
+}
+.theme-caltech .panel-flexible.home .block-border .panel-pane {
+  border: 1px solid rgb(200, 200, 200);
+  border-top: none;
+}
+.theme-caltech .panel-flexible.home .block-border .panel-pane {
+  padding: 0.813rem;
+}
+.theme-caltech .panel-flexible.home .pane-menu .menu {
+  margin: 0;
+}
+.theme-caltech .panel-flexible.home .pane-menu .leaf {
+  font-size: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Slider
+ *
+ * bxSlider uses an ID that must be overriden with !important in some cases.
+ */
+.theme-caltech .view-home-slider {
+  border: 1px solid #c8c8c8;
+}
+.theme-caltech .view-home-slider .views-field-field-slideshow-image,
+.theme-caltech .view-home-slider .views-field-field-body,
+.theme-caltech .view-home-slider .more-link {
+  padding: 5px;
+}
+.theme-caltech .view-home-slider .views-field-field-body {
+  border-top: 1px solid #c8c8c8;
+  margin: 0;
+}
+.theme-caltech .attachment .view-home-slider {
+  border: none;
+}
+.theme-caltech .bx-wrapper .bx-viewport {
+  border: none;
+  box-shadow: none;
+  left: 0;
+}
+.theme-caltech .bx-wrapper .bx-viewport ul {
+  margin-left: 0;
+}
+.theme-caltech .bx-wrapper .bx-controls-direction a {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  text-indent: 0 !important;
+  top: 40%;
+  z-index: auto !important;
+}
+.theme-caltech .bx-wrapper .bx-controls-direction a:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+.theme-caltech .bx-wrapper .bx-next,
+.theme-caltech .bx-wrapper .bx-prev {
+  background: none;
+}
+.theme-caltech .bx-wrapper .bx-next::before,
+.theme-caltech .bx-wrapper .bx-prev::before {
+  color: rgba(255, 114, 12, 0.7);
+  font-family: fontAwesome;
+  font-size: 42px;
+  position: relative;
+  top: -15px;
+}
+.theme-caltech .bx-wrapper .bx-next::before {
+  content: "\f0da";
+  left: 10px;
+}
+.theme-caltech .bx-wrapper .bx-prev::before {
+  content: "\f0d9";
+  left: 6px;
+}
+.theme-caltech .bx-wrapper .bx-next:hover::before,
+.theme-caltech .bx-wrapper .bx-prev:hover::before {
+  color: rgba(255, 114, 12, 1);
+}
+
+/**
+ * Quick Links
+ */
+.theme-caltech .view-quick-links {
+  line-height: 1.6;
+}
+.theme-caltech .view-quick-links .views-field.link-icon img {
+  width: 16px;
+}
+
+/**
+ * Callouts
+ */
+.theme-caltech .cta-callout .cta-title {
+  font-family: 'KievitSlabMedium', Georgia, serif;
+  font-size: large;
+  font-weight: normal;
+  padding-bottom: 0.813rem;
+}
+.theme-caltech .cta-callout .teaser-cont {
+  font-family: 'Vaud', Arial, sans-serif;
+  min-height: 4em;
+}
+.theme-caltech .cta-callout .teaser-cont .item-list {
+  display: none;
+}
+
+/**
+ * Events
+ */
+.theme-caltech .view-home-events .views-field-title {
+  margin-bottom: 0;
+}
+.theme-caltech .view-home-events .views-field-field-event-date {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.theme-caltech .view-home-events .views-field-body {
+  font-size: 0.9rem;
+}
+
+/**
+ * CaltechAUTHORS
+ */
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
+  display: none;
+}
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:nth-child(2) {
+  margin-bottom: 0;
+}
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article a {
+  word-wrap: break-word;
+}
