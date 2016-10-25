@@ -400,3 +400,29 @@ body.theme-caltech {
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article a {
   word-wrap: break-word;
 }
+
+/**
+ * LOCATIONS & HOURS
+ */
+.theme-caltech .view-hours-locations .attachment {
+  margin: 0 -0.9375rem;
+  max-width: none;
+  overflow: auto;
+  padding-bottom: 1.875rem;
+  width: auto;
+}
+.theme-caltech .view-hours-locations .attachment .view-content .item-list ul {
+  margin: 0.9375rem;
+  padding: 0 0 0.9375rem 0;
+}
+.theme-caltech .view-hours-locations .view-content > .row {
+  padding-bottom: 1.875rem;
+}
+@media only screen and (min-width: 641px) {
+  .theme-caltech .view-hours-locations .attachment {
+    padding-bottom: 3.25rem;
+  }
+  .theme-caltech .view-hours-locations .view-content > .row {
+    padding-bottom: 3.25rem;
+  }
+}
