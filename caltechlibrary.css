@@ -268,7 +268,7 @@ body.theme-caltech {
   margin: 0;
   padding: 0.8125rem;
 }
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .panel-flexible.home .panels-flexible-region-inside {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -390,8 +390,10 @@ body.theme-caltech {
 /**
  * Services
  */
-.theme-caltech .view-home-services li {
-  padding-bottom: 0;
+@media only screen and (min-width: 64.0625em) { /* min-width 1025px, large screens */
+  .theme-caltech .view-home-services li {
+    padding-bottom: 0;
+  }
 }
 
 /**
@@ -432,7 +434,7 @@ body.theme-caltech {
 .theme-caltech .cta-callout .teaser-cont .item-list {
   display: none;
 }
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .backgrounded .cta-callout .imgHolder {
     padding: 0.40625rem;
   }
@@ -488,7 +490,7 @@ body.theme-caltech {
 .theme-caltech .view-hours-locations .view-content > .row {
   padding-bottom: 1.875rem;
 }
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .view-hours-locations .attachment {
     padding-bottom: 3.25rem;
   }
