@@ -162,7 +162,7 @@ body.theme-caltech {
   display: block;
   float: left;
   list-style: none;
-  padding-top: 1px;
+  padding-top: 0;
 }
 .theme-caltech #top-header #block-menu-menu-top-menu .last {
   padding-right: 0;
