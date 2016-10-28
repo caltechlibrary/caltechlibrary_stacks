@@ -103,8 +103,16 @@ body.theme-caltech {
 .theme-caltech a.normal-text:hover {
   border-bottom: 1px dotted;
 }
+.theme-caltech .cta-callout .cta-title {
+  font-family: 'KievitSlabMedium', Georgia, serif;
+  font-size: large;
+  font-weight: normal;
+}
+.theme-caltech .cta-callout .teaser-cont {
+  font-family: 'Vaud', Arial, sans-serif;
+}
 .theme-caltech .item-list a.active {
-  color: rgb(255, 114, 12);
+  color: rgb(255, 114, 12); /* #ff720c; orange */
 }
 .theme-caltech .not-front .main-content > div > .content {
   margin-bottom: 0.9375rem;
@@ -422,26 +430,20 @@ body.theme-caltech {
 .theme-caltech .backgrounded .cta-callout .imgHolder {
   border: none;
 }
-.theme-caltech .cta-callout .cta-title {
-  font-family: 'KievitSlabMedium', Georgia, serif;
-  font-size: large;
-  font-weight: normal;
-}
-.theme-caltech .cta-callout .teaser-cont {
-  font-family: 'Vaud', Arial, sans-serif;
+.theme-caltech .panel-flexible.home .cta-callout .teaser-cont {
   min-height: 4em;
 }
-.theme-caltech .cta-callout .teaser-cont .item-list {
+.theme-caltech .panel-flexible.home .cta-callout .teaser-cont .item-list {
   display: none;
 }
 @media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .backgrounded .cta-callout .imgHolder {
     padding: 0.40625rem;
   }
-  .theme-caltech .cta-callout .cta-title {
+  .theme-caltech .panel-flexible.home .cta-callout .cta-title {
     padding: 0.8125rem;
   }
-  .theme-caltech .cta-callout .teaser-cont {
+  .theme-caltech .panel-flexible.home .cta-callout .teaser-cont {
     padding: 0 0.8125rem 0.8125rem;
   }
 }
@@ -470,6 +472,80 @@ body.theme-caltech {
   margin-bottom: 0;
 }
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article > a:last-of-type {
+  display: none;
+}
+
+/**
+ * LANDING PAGES
+ *
+ * @TODO Come up with class to use for landing pages other than `.not-front`.
+ */
+.theme-caltech.not-front .cta-callout .field-content {
+  border: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.theme-caltech.not-front .cta-callout .imgHolder {
+  border: none;
+  padding: 0;
+}
+.theme-caltech.not-front .cta-callout .cta-title {
+  font-family: 'VaudMedium', sans-serif;
+}
+.theme-caltech.not-front .cta-callout .cta-description {
+  font-family: 'VaudMedium', sans-serif;
+}
+
+/**
+ * Callout 1
+ */
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .field-content {
+  overflow: scroll;;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .field-content::before {
+  content: "";
+  display: block;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .no-imgURL {
+  background-color: transparent;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .no-imgURL img {
+  background-image: none !important;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .wrap-details {
+  background-color: gray;
+  position: absolute;
+  top: 0;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .cta-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .cta-title a {
+  color: white;
+}
+.theme-caltech.not-front .cta-callout .views-field:first-of-type .cta-description {
+  color: white;
+}
+/**
+ * Callouts 2, 3, and 4
+ */
+.theme-caltech.not-front .cta-callout .views-field:not(:first-of-type) .cta-title {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  bottom: 0;
+  font-size: 1rem;
+  padding-bottom: 0.8125rem;
+  text-align: right;
+}
+.theme-caltech.not-front .cta-callout .views-field:not(:first-of-type) .cta-title::after {
+  color: rgb(255, 114, 12); /* #ff720c; orange */
+  content: " ▸";
+}
+.theme-caltech.not-front .cta-callout .views-field:not(:first-of-type) .cta-title a {
+  color: white;
+}
+.theme-caltech.not-front .cta-callout .views-field:not(:first-of-type) .teaser-cont {
   display: none;
 }
 
