@@ -467,14 +467,22 @@ body.theme-caltech {
 /**
  * CaltechAUTHORS
  */
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
   display: none;
 }
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:nth-child(2) {
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:nth-child(3) {
   margin-bottom: 0;
 }
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article > a:last-of-type {
   display: none;
+}
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, medium screens only */
+  .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
+    display: none;
+  }
+  .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:nth-child(2) {
+    margin-bottom: 0;
+  }
 }
 
 /**
