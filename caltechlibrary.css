@@ -453,6 +453,8 @@ body.theme-caltech {
  */
 .theme-caltech .view-home-events .views-field-title {
   margin-bottom: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 .theme-caltech .view-home-events .views-field-field-event-date {
   font-size: 0.85rem;
