@@ -443,7 +443,7 @@ body.theme-caltech {
 }
 @media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .backgrounded .cta-callout .imgHolder {
-    padding: 0.40625rem;
+    padding: 0;
   }
   .theme-caltech .panel-flexible.home .cta-callout .cta-title {
     padding: 0.8125rem;
