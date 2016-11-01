@@ -333,14 +333,9 @@ body.theme-caltech {
  *
  * bxSlider uses an ID that must be overriden with !important in some cases.
  */
-.theme-caltech .view-home-slider {
-  border: 1px solid #c8c8c8;
-}
-.theme-caltech .view-home-slider .views-field-field-slideshow-image,
-.theme-caltech .view-home-slider .views-field-field-body,
-.theme-caltech .view-home-slider .more-link {
-  padding: 5px;
-}
+ .theme-caltech .panel-flexible.home .backgrounded .pane-views-home-slider-block {
+   padding: 0;
+ }
 .theme-caltech .view-home-slider .views-field-field-body {
   border-top: 1px solid #c8c8c8;
   margin: 0;
@@ -359,7 +354,7 @@ body.theme-caltech {
 .theme-caltech .bx-wrapper .bx-controls-direction a {
   background-color: rgba(255, 255, 255, 0.2) !important;
   text-indent: 0 !important;
-  top: 40%;
+  top: 50%;
   z-index: auto !important;
 }
 .theme-caltech .bx-wrapper .bx-controls-direction a:hover {
