@@ -59,6 +59,50 @@
   font-weight: normal;
   font-style: italic; }
 /**
+ * LANDING PAGES
+ */
+.theme-caltech.landing-panel .main-content > div > .content {
+  padding: 0; }
+.theme-caltech.landing-panel .main-content .content .view-block-grid ul {
+  margin: 0.46875rem;
+  padding-top: 0.46875rem; }
+.theme-caltech.landing-panel .view-landing-slider .views-row {
+  margin-bottom: 0.9375rem;
+  padding: 0 0.46875rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+  .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-title {
+    display: none; }
+  .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+    bottom: 0;
+    font-size: 1rem;
+    padding: 0.9375rem;
+    position: absolute;
+    text-align: right;
+    width: 100%; }
+    .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body::after {
+      color: #ff720c;
+      content: " ▸"; }
+    .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body a {
+      color: #fff;
+      font-family: "VaudMedium", Arial, sans-serif;
+      font-size: 1rem; }
+.theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-fieldset.text-wrapper {
+  color: #fff;
+  padding: 0.9375rem;
+  position: absolute;
+  top: 0; }
+.theme-caltech.landing-panel .view-landing-slider .views-field-field-slideshow-image {
+  background-color: #696b73; }
+.theme-caltech.landing-panel .view-landing-slider .views-fieldset.wrapper {
+  position: relative; }
+.theme-caltech.landing-panel .view-landing-slider .views-field-title {
+  color: #fff;
+  font-family: "VaudMedium", Arial, sans-serif;
+  text-transform: uppercase; }
+
+/**
  * GENERAL
  */
 body.theme-caltech {
@@ -467,152 +511,6 @@ body.theme-caltech {
   /* min-width 641px and max-width 1024px, medium screens only */
   .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
     display: none; } }
-/**
- * LANDING PAGES
- *
- * @TODO Adjust for small and medium screens.
- */
-.theme-caltech .landing .cta-callout .field-content {
-  border: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
-.theme-caltech .landing .cta-callout .imgHolder {
-  border: none;
-  padding: 0; }
-
-.theme-caltech .landing .cta-callout .cta-title {
-  font-family: 'VaudMedium', sans-serif; }
-
-.theme-caltech .landing .cta-callout .cta-description {
-  font-family: 'VaudMedium', sans-serif; }
-
-.theme-caltech .landing .cta-callout .views-field {
-  margin-bottom: 0; }
-
-.theme-caltech .landing .cta-callout .views-field .cta-title {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
-  bottom: 0;
-  font-size: 1rem;
-  padding-bottom: 0.8125rem;
-  position: absolute;
-  text-align: right; }
-
-.theme-caltech .landing .cta-callout .views-field .cta-title::after {
-  color: #ff720c;
-  /* #ff720c; orange */
-  content: " ▸"; }
-
-.theme-caltech .landing .cta-callout .views-field .cta-title a {
-  color: white; }
-
-.theme-caltech .landing .cta-callout .views-field .cta-title a:active,
-.theme-caltech .landing .cta-callout .views-field .cta-title a:focus,
-.theme-caltech .landing .cta-callout .views-field .cta-title a:hover {
-  text-decoration: underline; }
-
-.theme-caltech .landing .cta-callout .views-field .teaser-cont {
-  display: none; }
-
-.theme-caltech .landing .cta-callout .views-field .teaser-cont .item-list {
-  display: none; }
-
-.theme-caltech .landing .callouts .cta-callout {
-  margin-top: 0.9375rem !important; }
-
-.theme-caltech .landing .callouts .cta-callout {
-  margin-bottom: 0.9375rem; }
-
-.theme-caltech .landing .callouts .panel-pane:first-of-type .cta-callout {
-  margin-top: 0 !important; }
-
-.theme-caltech .landing .callouts .panel-pane:last-of-type .cta-callout {
-  margin-bottom: 0; }
-
-/**
- * Callout Text
- *
- * Add the class `callout-1-text` to the panel pane to indicate that the first
- * callout box should be displayed as text only, etc.
- */
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .field-content,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .field-content,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .field-content,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .field-content {
-  background-color: gray;
-  overflow: scroll; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .field-content::before,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .field-content::before,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .field-content::before,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .field-content::before {
-  content: "";
-  display: block; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .no-imgURL,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .no-imgURL,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .no-imgURL,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .no-imgURL {
-  background-color: transparent; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .no-imgURL img,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .no-imgURL img,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .no-imgURL img,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .no-imgURL img {
-  background-image: none !important; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .wrap-details,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .wrap-details,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .wrap-details,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .wrap-details {
-  position: absolute;
-  top: 0; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title {
-  background-image: none;
-  font-size: 2rem;
-  line-height: 1;
-  padding-bottom: 0;
-  position: relative;
-  text-align: left;
-  text-transform: uppercase;
-  white-space: normal; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title::after,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title::after,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title::after,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title::after {
-  content: none; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title a:active,
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title a:focus,
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title a:hover,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title a:active,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title a:focus,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title a:hover,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title a:active,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title a:focus,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title a:hover,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title a:active,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title a:focus,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title a:hover {
-  text-decoration: none; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .teaser-cont,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .teaser-cont,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .teaser-cont,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .teaser-cont {
-  display: block; }
-
-.theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-description,
-.theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-description,
-.theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-description,
-.theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-description {
-  color: white; }
-
 /**
  * LOCATIONS & HOURS
  */

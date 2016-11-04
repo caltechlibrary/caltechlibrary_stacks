@@ -1,0 +1,23 @@
+//
+// MIXINS
+//
+
+// Assumes parent element has `position: relative;` rule.
+@mixin image-title-link() {
+  background-image: linear-gradient(to bottom, transparent, rgba($black, 0.7));
+  bottom: 0;
+  font-size: 1rem;
+  padding: 0.9375rem;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  &::after {
+    color: $flamenco;
+    content: " ▸";
+  }
+  a {
+    color: $white;
+    font-family: $font-sans-heavy;
+    font-size: 1rem;
+  }
+}

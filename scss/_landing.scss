@@ -1,0 +1,51 @@
+/**
+ * LANDING PAGES
+ */
+.theme-caltech.landing-panel {
+  .main-content {
+    & > div > .content {
+      padding: 0;
+    }
+    .content .view-block-grid {
+      ul {
+        margin: (0.9375rem - 0.46875rem);
+        padding-top: 0.46875rem;
+      }
+    }
+  }
+  .view-landing-slider {
+    .views-row {
+      margin-bottom: 0.9375rem;
+      padding: 0 0.46875rem;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      &:not(.views-row-1) {
+        .views-field-title {
+          display: none;
+        }
+        .views-field-field-body {
+          @include image-title-link();
+        }
+      }
+    }
+    .views-row-1 {
+      .views-fieldset.text-wrapper {
+        color: $white;
+        padding: 0.9375rem;
+        position: absolute;
+        top: 0;
+      }
+    }
+    .views-field-field-slideshow-image {
+      background-color: $shuttle;
+    }
+    .views-fieldset.wrapper {
+      position: relative;
+    }
+    .views-field-title {
+      color: $white;
+      font-family: $font-sans-heavy;
+      text-transform: uppercase;
+    }
+  }
+}
