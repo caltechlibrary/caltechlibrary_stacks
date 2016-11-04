@@ -29,15 +29,15 @@
       }
     }
     .views-row-1 {
+      .views-field-field-slideshow-image {
+        background-color: $shuttle;
+      }
       .views-fieldset.text-wrapper {
         color: $white;
         padding: 0.9375rem;
         position: absolute;
         top: 0;
       }
-    }
-    .views-field-field-slideshow-image {
-      background-color: $shuttle;
     }
     .views-fieldset.wrapper {
       position: relative;

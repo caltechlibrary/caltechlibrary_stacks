@@ -88,13 +88,13 @@
       color: #fff;
       font-family: "VaudMedium", Arial, sans-serif;
       font-size: 1rem; }
+.theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-field-field-slideshow-image {
+  background-color: #696b73; }
 .theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-fieldset.text-wrapper {
   color: #fff;
   padding: 0.9375rem;
   position: absolute;
   top: 0; }
-.theme-caltech.landing-panel .view-landing-slider .views-field-field-slideshow-image {
-  background-color: #696b73; }
 .theme-caltech.landing-panel .view-landing-slider .views-fieldset.wrapper {
   position: relative; }
 .theme-caltech.landing-panel .view-landing-slider .views-field-title {
