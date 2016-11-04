@@ -1,102 +1,45 @@
-@charset "UTF-8";
-/**
- * FONTS
- */
-@font-face {
-  font-family: 'KievitSlabMedium';
-  src: url("/sites/default/files/fonts/KievitSlabWebPro-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/KievitSlabWebPro-Medium.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/KievitSlabWebPro-Medium.woff") format("woff");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Vaud';
-  src: url("/sites/default/files/fonts/VaudBook-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/VaudBook-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/VaudBook-webfont.woff") format("woff"), url("/sites/default/files/fonts/VaudBook-webfont.ttf") format("truetype"), url("/sites/default/files/fonts/VaudBook-webfont.svg#vaudregular") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Vaud';
-  src: url("/sites/default/files/fonts/VaudBookIt-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/VaudBookIt-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/VaudBookIt-webfont.woff") format("woff"), url("/sites/default/files/fonts/VaudBookIt-webfont.ttf") format("truetype"), url("/sites/default/files/fonts/VaudBookIt-webfont.svg#vauditalic") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Vaud';
-  src: url("/sites/default/files/fonts/VaudUltra-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/VaudUltra-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/VaudUltra-webfont.woff") format("woff"), url("/sites/default/files/fonts/VaudUltra-webfont.ttf") format("truetype"), url("/sites/default/files/fonts/VaudUltra-webfont.svg#vaudregular") format("svg");
-  /* Legacy iOS */
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Vaud';
-  src: url("/sites/default/files/fonts/VaudUltraIt-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/VaudUltraIt-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/VaudUltraIt-webfont.woff") format("woff"), url("/sites/default/files/fonts/VaudUltraIt-webfont.ttf") format("truetype"), url("/sites/default/files/fonts/VaudUltraIt-webfont.svg#vauditalic") format("svg");
-  /* Legacy iOS */
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: 'VaudMedium';
-  src: url("/sites/default/files/fonts/VaudExtraBold-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/VaudExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/VaudExtraBold-webfont.woff") format("woff"), url("/sites/default/files/fonts/VaudExtraBold-webfont.ttf") format("truetype"), url("/sites/default/files/fonts/VaudExtraBold-webfont.svg#vaudregular") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'VaudMedium';
-  src: url("/sites/default/files/fonts/VaudExtraBoldIt-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/sites/default/files/fonts/VaudExtraBoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/default/files/fonts/VaudExtraBoldIt-webfont.woff") format("woff"), url("/sites/default/files/fonts/VaudExtraBoldIt-webfont.ttf") format("truetype"), url("/sites/default/files/fonts/VaudExtraBoldIt-webfont.svg#vaudregular") format("svg");
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: italic; }
+@import "scss/colors";
+@import "scss/fonts";
+
 /**
  * GENERAL
  */
 body.theme-caltech {
-  font-family: 'Vaud', Arial, sans-serif; }
-
+  font-family: 'Vaud', Arial, sans-serif;
+}
 .theme-caltech button {
-  font-family: 'Vaud', Arial, sans-serif; }
-
+  font-family: 'Vaud', Arial, sans-serif;
+}
 .theme-caltech h1,
 .theme-caltech h2,
 .theme-caltech h3,
 .theme-caltech h4,
 .theme-caltech h5,
 .theme-caltech h6 {
-  font-family: 'KievitSlabMedium', Georgia, serif; }
-
+  font-family: 'KievitSlabMedium', Georgia, serif;
+}
 .theme-caltech a.normal-text {
-  color: #444444; }
-
+  color: rgb(68, 68, 68);
+}
 .theme-caltech a.normal-text:active,
 .theme-caltech a.normal-text:focus,
 .theme-caltech a.normal-text:hover {
-  text-decoration: underline; }
-
+  text-decoration: underline;
+}
 .theme-caltech .cta-callout .cta-title {
   font-family: 'KievitSlabMedium', Georgia, serif;
   font-size: large;
-  font-weight: normal; }
-
+  font-weight: normal;
+}
 .theme-caltech .cta-callout .teaser-cont {
-  font-family: 'Vaud', Arial, sans-serif; }
-
+  font-family: 'Vaud', Arial, sans-serif;
+}
 .theme-caltech .item-list a.active {
-  color: #ff720c;
-  /* #ff720c; orange */ }
-
+  color: rgb(255, 114, 12); /* #ff720c; orange */
+}
 .theme-caltech .not-front .main-content > div > .content {
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 0.9375rem;
+}
 
 /**
  * LOCATION BAR
@@ -107,13 +50,15 @@ body.theme-caltech {
  * the Top Header region than the Location Bar and a Top Header region.
  */
 .theme-caltech .location-bar {
-  display: none; }
+  display: none;
+}
 
 /**
  * LOCATION MODAL
  */
 .theme-caltech #modal-all-locations .email {
-  display: none; }
+  display: none;
+}
 
 /**
  * TOP HEADER
@@ -125,11 +70,11 @@ body.theme-caltech {
   overflow: hidden;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 100%; }
-
+  width: 100%;
+}
 .theme-caltech #top-header .view-hours-today .views-field-hours {
-  padding-left: 0.375em; }
-
+  padding-left: 0.375em;
+}
 /**
  * Normally the .inline-list class would be added to the UL tags, but we cannot
  * add those without theme functions. Instead all the styles from Foundation
@@ -142,26 +87,27 @@ body.theme-caltech {
   margin-left: 0.9375rem;
   margin-right: 0;
   overflow: hidden;
-  padding: 0; }
-
+  padding: 0;
+}
 .theme-caltech #top-header #block-menu-menu-top-menu ul > li {
   display: block;
   float: left;
   list-style: none;
-  padding-top: 0; }
-
+  padding-top: 0;
+}
 .theme-caltech #top-header #block-menu-menu-top-menu .last {
-  padding-right: 0; }
-
+  padding-right: 0;
+}
 .theme-caltech #top-header a {
   color: white;
-  font-size: 0.75rem; }
-
+  font-size: 0.75rem;
+}
 .theme-caltech #top-header .libchat_online,
 .theme-caltech #top-header .libchat_offline {
   border: 0 !important;
   padding: 0 !important;
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+}
 
 /**
  * HEADER
@@ -170,139 +116,140 @@ body.theme-caltech {
  * which was not clearing the Location Bar or Top Header region.
  */
 .theme-caltech #header .header-row .section {
-  position: relative; }
+  position: relative;
+}
 
 /**
  * MAIN MENU
  */
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
-  color: #696b73;
+  color: rgb(105, 107, 115);
   font-family: 'KievitSlabMedium', Georgia, serif;
   font-size: large;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased;
+}
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li a {
-  padding: 5px 10px; }
-
+  padding: 5px 10px;
+}
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li hr {
-  margin: 5px 0; }
+  margin: 5px 0;
+}
 
 /**
  * SEARCH
  */
 .theme-caltech #search .block-hf-stacks-search {
-  background-color: #00afab; }
-
+  background-color: #00afab;
+}
 .theme-caltech #search .block-hf-stacks-search .selectWrapper {
-  display: none; }
-
+  display: none;
+}
 .theme-caltech #search .block-hf-stacks-search #searchBox {
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 .theme-caltech #search .block-hf-stacks-search #searchSubmit {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /**
  * Search Resources
  */
 .theme-caltech .view-home-search-resources ul {
   font-size: larger;
-  padding-top: 1.25rem; }
+  padding-top: 1.25rem;
+}
 
 /**
  * HOME PANEL
  */
 .theme-caltech .panels-flexible-region .pane-block {
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 .theme-caltech .panel-flexible.home .panels-flexible-row {
-  margin-bottom: 3.25rem; }
-
+  margin-bottom: 3.25rem;
+}
 .theme-caltech .panel-flexible.home .panels-flexible-region {
-  margin: 0; }
-
+  margin: 0;
+}
 .theme-caltech .panel-flexible.home .panels-flexible-region-inside {
   padding-left: 0;
-  padding-right: 0; }
-
+  padding-right: 0;
+}
 .theme-caltech .backgrounded {
   background-color: #c8c8c8;
   float: left;
   margin: 0;
   max-width: none;
-  width: auto; }
-
+  width: auto;
+}
 .theme-caltech .backgrounded .panels-flexible-region-inside {
   background-color: white;
-  margin: 0.8125rem; }
-
+  margin: 0.8125rem;
+}
 .theme-caltech .backgrounded .blk-title {
   animation: none;
   margin: 0;
-  padding: 0.8125rem; }
-
+  padding: 0.8125rem;
+}
 .theme-caltech .backgrounded .blk-title::after {
-  content: none; }
-
+  content: none;
+}
 .theme-caltech .backgrounded .panel-pane {
   margin: 0;
-  padding: 0.8125rem; }
-
-@media only screen and (min-width: 40.0625em) {
-  /* min-width 641px, medium screens */
+  padding: 0.8125rem;
+}
+@media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .panel-flexible.home .panels-flexible-region-inside {
     padding-left: 0.5em;
-    padding-right: 0.5em; }
-
+    padding-right: 0.5em;
+  }
   .theme-caltech .panel-flexible.home .panels-flexible-region-inside-first {
-    padding-left: 0; }
-
+    padding-left: 0;
+  }
   .theme-caltech .panel-flexible.home .panels-flexible-region-inside-last {
-    padding-right: 0; }
-
+    padding-right: 0;
+  }
   .theme-caltech .panel-flexible.home .backgrounded .panels-flexible-row-inside {
-    display: -ms-flexbox;
-    display: flex; }
-
+    display: flex;
+  }
   .theme-caltech .panel-flexible.home .backgrounded .panels-flexible-region {
-    display: -ms-flexbox;
-    display: flex; }
-
+    display: flex;
+  }
   .theme-caltech .panel-flexible.home .backgrounded .panels-flexible-region-inside {
     padding: 0;
-    -ms-flex: 1;
-        flex: 1; } }
+    flex: 1;
+  }
+}
 .theme-caltech .panel-flexible.home .block-border .blk-title {
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgb(200, 200, 200);
   margin: 0;
-  padding: 0.813rem; }
-
+  padding: 0.813rem;
+}
 .theme-caltech .panel-flexible.home .block-border .blk-title::after {
-  content: none; }
-
+  content: none;
+}
 .theme-caltech .panel-flexible.home .block-border .panel-pane {
-  border: 1px solid #c8c8c8;
-  border-top: none; }
-
+  border: 1px solid rgb(200, 200, 200);
+  border-top: none;
+}
 .theme-caltech .panel-flexible.home .block-border .panel-pane {
-  padding: 0.813rem; }
-
+  padding: 0.813rem;
+}
 .theme-caltech .panel-flexible.home .pane-menu .menu {
-  margin: 0; }
-
+  margin: 0;
+}
 .theme-caltech .panel-flexible.home .pane-menu .leaf {
   font-size: 1rem;
   list-style: none;
   margin: 0;
-  padding: 0; }
-
+  padding: 0;
+}
 .theme-caltech .panel-flexible.home .more-link {
-  bottom: 1.21875rem;
-  /* 1.5 × 0.8125 */
+  bottom: 1.21875rem; /* 1.5 × 0.8125 */
   position: absolute;
-  right: 1.625rem;
-  /* 2 × 0.8125 */ }
+  right: 1.625rem; /* 2 × 0.8125 */
+}
 
 /**
  * Slider
@@ -310,10 +257,10 @@ body.theme-caltech {
  * bxSlider uses an ID that must be overriden with !important in some cases.
  */
 .theme-caltech .panel-flexible.home .backgrounded .pane-views-home-slider-block {
-  padding: 0; }
-
+  padding: 0;
+}
 .theme-caltech .view-home-slider .views-field-field-body {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   bottom: 0;
   font-family: 'VaudMedium', sans-serif;
   font-size: 1rem;
@@ -323,150 +270,157 @@ body.theme-caltech {
   text-align: right;
   width: 100%;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased;
+}
 .theme-caltech .view-home-slider .views-field-field-body::after {
-  color: #ff720c;
-  /* #ff720c; orange */
-  content: " ▸"; }
-
+  color: rgb(255, 114, 12); /* #ff720c; orange */
+  content: " ▸";
+}
 .theme-caltech .view-home-slider .views-field-field-body a {
-  color: white; }
-
+  color: white;
+}
 .theme-caltech .attachment .view-home-slider {
-  border: none; }
-
+  border: none;
+}
 .theme-caltech .bx-wrapper .bx-viewport {
   border: none;
   box-shadow: none;
-  left: 0; }
-
+  left: 0;
+}
 .theme-caltech .bx-wrapper .bx-viewport ul {
-  margin-left: 0; }
-
+  margin-left: 0;
+}
 .theme-caltech .bx-wrapper .bx-controls-direction a {
   background-color: rgba(255, 255, 255, 0.2) !important;
   text-indent: 0 !important;
   top: 50%;
-  z-index: auto !important; }
-
+  z-index: auto !important;
+}
 .theme-caltech .bx-wrapper .bx-controls-direction a:hover {
-  background-color: white !important; }
-
+  background-color: rgba(255, 255, 255, 1) !important;
+}
 .theme-caltech .bx-wrapper .bx-next,
 .theme-caltech .bx-wrapper .bx-prev {
-  background: none; }
-
+  background: none;
+}
 .theme-caltech .bx-wrapper .bx-next::before,
 .theme-caltech .bx-wrapper .bx-prev::before {
   color: rgba(255, 114, 12, 0.7);
   font-family: fontAwesome;
   font-size: 42px;
   position: relative;
-  top: -15px; }
-
+  top: -15px;
+}
 .theme-caltech .bx-wrapper .bx-next::before {
   content: "\f0da";
-  left: 10px; }
-
+  left: 10px;
+}
 .theme-caltech .bx-wrapper .bx-prev::before {
   content: "\f0d9";
-  left: 6px; }
-
+  left: 6px;
+}
 .theme-caltech .bx-wrapper .bx-next:hover::before,
 .theme-caltech .bx-wrapper .bx-prev:hover::before {
-  color: #ff720c; }
+  color: rgba(255, 114, 12, 1);
+}
 
 /**
  * Quick Links
  */
 .theme-caltech .view-quick-links {
-  line-height: 1.6; }
-
+  line-height: 1.6;
+}
 .theme-caltech .view-quick-links .views-field.link-icon img {
-  width: 16px; }
+  width: 16px;
+}
 
 /**
  * Services
  */
-@media only screen and (min-width: 64.0625em) {
-  /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.0625em) { /* min-width 1025px, large screens */
   .theme-caltech .view-home-services li {
-    padding-bottom: 0; } }
+    padding-bottom: 0;
+  }
+}
+
 /**
  * Callout
  */
 .theme-caltech .panel-flexible.home .backgrounded .panels-flexible-region.callout {
-  margin: 0; }
-
+  margin: 0;
+}
 .theme-caltech .backgrounded .callout .panels-flexible-region-inside {
-  margin: 0; }
-
+  margin: 0;
+}
 .theme-caltech .backgrounded .callout .panel-pane.pane-nodeblock {
-  padding: 0; }
-
+  padding: 0;
+}
 .theme-caltech .backgrounded .cta-callout {
   background-color: #c8c8c8;
-  margin: 0 !important; }
-
+  margin: 0 !important;
+}
 .theme-caltech .backgrounded .cta-callout .views-field {
   margin: 0;
-  padding: 0; }
-
+  padding: 0;
+}
 .theme-caltech .backgrounded .cta-callout .field-content {
-  margin: 0.8125rem; }
-
+  margin: 0.8125rem;
+}
 .theme-caltech .backgrounded .cta-callout .imgHolder {
-  border: none; }
-
+  border: none;
+}
 .theme-caltech .panel-flexible.home .cta-callout .teaser-cont {
-  min-height: 4em; }
-
+  min-height: 4em;
+}
 .theme-caltech .panel-flexible.home .cta-callout .teaser-cont .item-list {
-  display: none; }
-
-@media only screen and (min-width: 40.0625em) {
-  /* min-width 641px, medium screens */
+  display: none;
+}
+@media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .backgrounded .cta-callout .imgHolder {
-    padding: 0; }
-
+    padding: 0;
+  }
   .theme-caltech .panel-flexible.home .cta-callout .cta-title {
-    padding: 0.8125rem; }
-
+    padding: 0.8125rem;
+  }
   .theme-caltech .panel-flexible.home .cta-callout .teaser-cont {
-    padding: 0 0.8125rem 0.8125rem; } }
+    padding: 0 0.8125rem 0.8125rem;
+  }
+}
+
 /**
  * Events
  */
 .theme-caltech .view-home-events .view-content {
-  margin-bottom: 1.21875rem;
-  /* 1.5 × 0.8125; to make room for `more-link` */ }
-
+  margin-bottom: 1.21875rem; /* 1.5 × 0.8125; to make room for `more-link` */
+}
 .theme-caltech .view-home-events .views-field-title {
   margin-bottom: 0;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased;
+}
 .theme-caltech .view-home-events .views-field-field-event-date {
   font-size: 0.85rem;
-  font-style: italic; }
-
+  font-style: italic;
+}
 .theme-caltech .view-home-events .views-field-body {
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
 
 /**
  * CaltechAUTHORS
  */
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
-  display: none; }
-
+  display: none;
+}
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article > a:last-of-type {
-  display: none; }
-
-@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  /* min-width 641px and max-width 1024px, medium screens only */
+  display: none;
+}
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, medium screens only */
   .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
-    display: none; } }
+    display: none;
+  }
+}
+
 /**
  * LANDING PAGES
  *
@@ -475,60 +429,59 @@ body.theme-caltech {
 .theme-caltech .landing .cta-callout .field-content {
   border: none;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased;
+}
 .theme-caltech .landing .cta-callout .imgHolder {
   border: none;
-  padding: 0; }
-
+  padding: 0;
+}
 .theme-caltech .landing .cta-callout .cta-title {
-  font-family: 'VaudMedium', sans-serif; }
-
+  font-family: 'VaudMedium', sans-serif;
+}
 .theme-caltech .landing .cta-callout .cta-description {
-  font-family: 'VaudMedium', sans-serif; }
-
+  font-family: 'VaudMedium', sans-serif;
+}
 .theme-caltech .landing .cta-callout .views-field {
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 .theme-caltech .landing .cta-callout .views-field .cta-title {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   bottom: 0;
   font-size: 1rem;
   padding-bottom: 0.8125rem;
   position: absolute;
-  text-align: right; }
-
+  text-align: right;
+}
 .theme-caltech .landing .cta-callout .views-field .cta-title::after {
-  color: #ff720c;
-  /* #ff720c; orange */
-  content: " ▸"; }
-
+  color: rgb(255, 114, 12); /* #ff720c; orange */
+  content: " ▸";
+}
 .theme-caltech .landing .cta-callout .views-field .cta-title a {
-  color: white; }
-
+  color: white;
+}
 .theme-caltech .landing .cta-callout .views-field .cta-title a:active,
 .theme-caltech .landing .cta-callout .views-field .cta-title a:focus,
 .theme-caltech .landing .cta-callout .views-field .cta-title a:hover {
-  text-decoration: underline; }
-
+  text-decoration: underline;
+}
 .theme-caltech .landing .cta-callout .views-field .teaser-cont {
-  display: none; }
-
+  display: none;
+}
 .theme-caltech .landing .cta-callout .views-field .teaser-cont .item-list {
-  display: none; }
-
+  display: none;
+}
 .theme-caltech .landing .callouts .cta-callout {
-  margin-top: 0.9375rem !important; }
-
+  margin-top: 0.9375rem !important;
+}
 .theme-caltech .landing .callouts .cta-callout {
-  margin-bottom: 0.9375rem; }
-
+  margin-bottom: 0.9375rem;
+}
 .theme-caltech .landing .callouts .panel-pane:first-of-type .cta-callout {
-  margin-top: 0 !important; }
-
+  margin-top: 0 !important;
+}
 .theme-caltech .landing .callouts .panel-pane:last-of-type .cta-callout {
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 /**
  * Callout Text
  *
@@ -540,34 +493,34 @@ body.theme-caltech {
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .field-content,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .field-content {
   background-color: gray;
-  overflow: scroll; }
-
+  overflow: scroll;;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .field-content::before,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .field-content::before,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .field-content::before,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .field-content::before {
   content: "";
-  display: block; }
-
+  display: block;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .no-imgURL,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .no-imgURL,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .no-imgURL,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .no-imgURL {
-  background-color: transparent; }
-
+  background-color: transparent;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .no-imgURL img,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .no-imgURL img,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .no-imgURL img,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .no-imgURL img {
-  background-image: none !important; }
-
+  background-image: none !important;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .wrap-details,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .wrap-details,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .wrap-details,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .wrap-details {
   position: absolute;
-  top: 0; }
-
+  top: 0;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title,
@@ -576,17 +529,17 @@ body.theme-caltech {
   font-size: 2rem;
   line-height: 1;
   padding-bottom: 0;
-  position: relative;
+  position: relative;;
   text-align: left;
   text-transform: uppercase;
-  white-space: normal; }
-
+  white-space: normal;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title::after,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-title::after,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-title::after,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title::after {
-  content: none; }
-
+  content: none;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title a:active,
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title a:focus,
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-title a:hover,
@@ -599,19 +552,20 @@ body.theme-caltech {
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title a:active,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title a:focus,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-title a:hover {
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .teaser-cont,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .teaser-cont,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .teaser-cont,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .teaser-cont {
-  display: block; }
-
+  display: block;
+}
 .theme-caltech .landing .callout-1-text .cta-callout .views-field:first-of-type .cta-description,
 .theme-caltech .landing .callout-2-text .cta-callout .views-field:nth-of-type(2) .cta-description,
 .theme-caltech .landing .callout-3-text .cta-callout .views-field:nth-of-type(3) .cta-description,
 .theme-caltech .landing .callout-4-text .cta-callout .views-field:nth-of-type(4) .cta-description {
-  color: white; }
+  color: white;
+}
 
 /**
  * LOCATIONS & HOURS
@@ -621,24 +575,27 @@ body.theme-caltech {
   max-width: none;
   overflow: auto;
   padding-bottom: 1.875rem;
-  width: auto; }
-
+  width: auto;
+}
 .theme-caltech .view-hours-locations .attachment .view-content .item-list ul {
   margin: 0.9375rem;
-  padding: 0 0 0.9375rem 0; }
-
+  padding: 0 0 0.9375rem 0;
+}
 .theme-caltech .view-hours-locations .view-content > .row {
-  padding-bottom: 1.875rem; }
-
-@media only screen and (min-width: 40.0625em) {
-  /* min-width 641px, medium screens */
+  padding-bottom: 1.875rem;
+}
+@media only screen and (min-width: 40.0625em) { /* min-width 641px, medium screens */
   .theme-caltech .view-hours-locations .attachment {
-    padding-bottom: 3.25rem; }
-
+    padding-bottom: 3.25rem;
+  }
   .theme-caltech .view-hours-locations .view-content > .row {
-    padding-bottom: 3.25rem; } }
+    padding-bottom: 3.25rem;
+  }
+}
+
 /**
  * SOFTWARE
  */
 .theme-caltech .view-software .view-header h2 {
-  display: none; }
+  display: none;
+}
