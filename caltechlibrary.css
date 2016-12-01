@@ -59,207 +59,33 @@
   font-weight: normal;
   font-style: italic; }
 /**
- * LANDING PAGES
+ * HEADER
  */
-.theme-caltech.landing-panel .main-content > div > .content {
-  padding: 0; }
-.theme-caltech.landing-panel .main-content .content .view-block-grid ul {
-  margin: 0.46875rem;
-  padding-top: 0.46875rem; }
-.theme-caltech.landing-panel .view-landing-slider .views-row {
-  margin-bottom: 0.9375rem;
-  padding: 0 0.46875rem;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-  .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-title {
-    display: none; }
-  .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body {
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
-    bottom: 0;
-    font-size: 1rem;
-    padding: 0.9375rem;
-    position: absolute;
-    text-align: right;
-    width: 100%; }
-    .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body::after {
-      color: #ff720c;
-      content: " ▸"; }
-    .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body a {
-      color: #fff;
-      font-family: "VaudMedium", Arial, sans-serif;
-      font-size: 1rem; }
-.theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-field-field-slideshow-image {
-  background-color: #696b73; }
-.theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-fieldset.text-wrapper {
-  color: #fff;
-  padding: 0.9375rem;
-  position: absolute;
-  top: 0; }
-.theme-caltech.landing-panel .view-landing-slider .views-fieldset.wrapper {
-  position: relative; }
-.theme-caltech.landing-panel .view-landing-slider .views-field-title {
-  color: #fff;
-  font-family: "VaudMedium", Arial, sans-serif;
-  text-transform: uppercase; }
+/* @TODO Remove `html` class when `theme-caltech` is removed from theme. */
+.html.theme-caltech #top-header {
+  height: auto; }
 
-/**
- * TOP HEADER
- */
-.theme-caltech #top-header #block-menu-menu-top-menu {
-  margin-right: 3.75rem; }
+.theme-caltech #top-header #block-views-hours-today-top {
+  margin-left: 0; }
+
+.theme-caltech #top-header .top-menu {
+  padding: 0 1.875rem 0 0; }
+  .theme-caltech #top-header .top-menu .content li a {
+    font-size: 0.75rem;
+    letter-spacing: normal; }
 
 .theme-caltech #top-header #block-hf-basic-search-hf-basic-search {
   bottom: 0;
-  position: absolute;
-  right: 0.9375rem; }
-
-.theme-caltech #top-header {
-  background: #76777b;
-  color: white;
-  display: block;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 100%; }
-
-.theme-caltech #top-header .view-hours-today .views-field-hours {
-  padding-left: 0.375em; }
-
-/**
- * Normally the .inline-list class would be added to the UL tags, but we cannot
- * add those without theme functions. Instead all the styles from Foundation
- * inline lists have been added here to the UL tags.
- */
-.theme-caltech #top-header #block-menu-menu-top-menu ul {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0.25rem;
-  margin-left: 0.9375rem;
   margin-right: 0;
-  overflow: hidden;
-  padding: 0; }
-
-.theme-caltech #top-header #block-menu-menu-top-menu ul > li {
-  display: block;
-  float: left;
-  list-style: none;
-  padding-top: 0; }
-
-.theme-caltech #top-header #block-menu-menu-top-menu .last {
-  padding-right: 0; }
-
-.theme-caltech #top-header a {
-  color: white;
-  font-size: 0.75rem; }
-
-.theme-caltech #top-header .libchat_online,
-.theme-caltech #top-header .libchat_offline {
-  border: 0 !important;
-  padding: 0 !important;
-  font-size: 0.75rem; }
+  position: absolute;
+  right: 0.9375rem;
+  width: auto; }
 
 /**
- * GENERAL
- */
-body.theme-caltech {
-  font-family: 'Vaud', Arial, sans-serif; }
-
-.theme-caltech button {
-  font-family: 'Vaud', Arial, sans-serif; }
-
-.theme-caltech h1,
-.theme-caltech h2,
-.theme-caltech h3,
-.theme-caltech h4,
-.theme-caltech h5,
-.theme-caltech h6 {
-  font-family: 'KievitSlabMedium', Georgia, serif; }
-
-.theme-caltech a.normal-text {
-  color: #444444; }
-
-.theme-caltech a.normal-text:active,
-.theme-caltech a.normal-text:focus,
-.theme-caltech a.normal-text:hover {
-  text-decoration: underline; }
-
-.theme-caltech .cta-callout .cta-title {
-  font-family: 'KievitSlabMedium', Georgia, serif;
-  font-size: large;
-  font-weight: normal; }
-
-.theme-caltech .cta-callout .teaser-cont {
-  font-family: 'Vaud', Arial, sans-serif; }
-
-.theme-caltech .item-list a.active {
-  color: #ff720c;
-  /* #ff720c; orange */ }
-
-.theme-caltech .not-front .main-content > div > .content {
-  margin-bottom: 0.9375rem; }
-
-/**
- * LOCATION BAR
- *
- * The Location Bar is enabled in the theme, but completely hidden here so that
- * the modal window code is still available for the links from the view we are
- * using to replace it. It is much easier to style two blocks that are both in
- * the Top Header region than the Location Bar and a Top Header region.
- */
-.theme-caltech .location-bar {
-  display: none; }
-
-/**
- * LOCATION MODAL
- */
-.theme-caltech #modal-all-locations .email {
-  display: none; }
-
-/**
- * HEADER
- *
- * It seems that there is a bug in the theme. This fixes the mobile menu icon
- * which was not clearing the Location Bar or Top Header region.
- */
-.theme-caltech #header .header-row .section {
-  position: relative; }
-
-/**
- * MAIN MENU
+ * Main Menu
  */
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
-  color: #696b73;
-  font-family: 'KievitSlabMedium', Georgia, serif;
-  font-size: large;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
-
-.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li a {
-  padding: 5px 10px; }
-
-.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li hr {
-  margin: 5px 0; }
-
-/**
- * SEARCH
- */
-.theme-caltech #search .block-hf-stacks-search {
-  background-color: #00afab; }
-
-.theme-caltech #search .block-hf-stacks-search .selectWrapper {
-  display: none; }
-
-.theme-caltech #search .block-hf-stacks-search #searchBox {
-  margin-bottom: 0; }
-
-.theme-caltech #search .block-hf-stacks-search #searchSubmit {
-  margin-bottom: 0; }
-
-/**
- * Search Resources
- */
-.theme-caltech .view-home-search-resources ul {
-  font-size: larger;
-  padding-top: 1.25rem; }
+  font-weight: normal; }
 
 /**
  * HOME PANEL
@@ -356,33 +182,65 @@ body.theme-caltech {
   /* 2 × 0.8125 */ }
 
 /**
- * Slider
- *
- * bxSlider uses an ID that must be overriden with !important in some cases.
+ * Quick Links
  */
-.theme-caltech .panel-flexible.home .backgrounded .pane-views-home-slider-block {
-  padding: 0; }
+/**
+ * Callout
+ */
+.theme-caltech .backgrounded .cta-callout .field-content {
+  margin: 0.8125rem; }
 
+/**
+ * Events
+ */
+.theme-caltech .backgrounded .panels-flexible-region-home-left_-inside {
+  background-color: rgba(0, 88, 81, 0.4); }
+
+.theme-caltech .view-home-events .view-content {
+  margin-bottom: 1.21875rem;
+  /* 1.5 × 0.8125; to make room for `more-link` */ }
+
+.theme-caltech .view-home-events .views-field-title {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+/**
+ * CaltechAUTHORS
+ */
+.theme-caltech .backgrounded .panels-flexible-region-home-center-inside {
+  background-color: #00e2dd; }
+
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
+  display: none; }
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  /* min-width 641px and max-width 1024px, medium screens only */
+  .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
+    display: none; } }
+/**
+ * HOME SLIDER
+ */
 .theme-caltech .view-home-slider .views-field-field-body {
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
   bottom: 0;
-  font-family: 'VaudMedium', sans-serif;
   font-size: 1rem;
-  margin: 0;
-  padding: 0.8125rem;
+  padding: 0.9375rem;
   position: absolute;
   text-align: right;
   width: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
+  .theme-caltech .view-home-slider .views-field-field-body::after {
+    color: #ff720c;
+    content: " ▸"; }
+  .theme-caltech .view-home-slider .views-field-field-body a {
+    color: #fff;
+    font-family: "VaudMedium", Arial, sans-serif;
+    font-size: 1rem; }
 
-.theme-caltech .view-home-slider .views-field-field-body::after {
-  color: #ff720c;
-  /* #ff720c; orange */
-  content: " ▸"; }
-
-.theme-caltech .view-home-slider .views-field-field-body a {
-  color: white; }
+/* bxSlider uses an ID that must be overriden with !important in some cases. */
+.theme-caltech .panel-flexible.home .backgrounded .pane-views-home-slider-block {
+  padding: 0; }
 
 .theme-caltech .attachment .view-home-slider {
   border: none; }
@@ -429,121 +287,64 @@ body.theme-caltech {
   color: #ff720c; }
 
 /**
- * Quick Links
+ * LANDING PAGES
  */
-.theme-caltech .view-quick-links {
-  line-height: 1.6; }
-
-.theme-caltech .view-quick-links .views-field.link-icon img {
-  width: 16px; }
-
-/**
- * Services
- */
-@media only screen and (min-width: 64.0625em) {
-  /* min-width 1025px, large screens */
-  .theme-caltech .view-home-services li {
-    padding-bottom: 0; } }
-/**
- * Callout
- */
-.theme-caltech .panel-flexible.home .backgrounded .panels-flexible-region.callout {
-  margin: 0; }
-
-.theme-caltech .backgrounded .callout .panels-flexible-region-inside {
-  margin: 0; }
-
-.theme-caltech .backgrounded .callout .panel-pane.pane-nodeblock {
+.theme-caltech.landing-panel .main-content > div > .content {
   padding: 0; }
-
-.theme-caltech .backgrounded .cta-callout {
-  background-color: #c8c8c8;
-  margin: 0 !important; }
-
-.theme-caltech .backgrounded .cta-callout .views-field {
-  margin: 0;
-  padding: 0; }
-
-.theme-caltech .backgrounded .cta-callout .field-content {
-  margin: 0.8125rem; }
-
-.theme-caltech .backgrounded .cta-callout .imgHolder {
-  border: none; }
-
-.theme-caltech .panel-flexible.home .cta-callout .teaser-cont {
-  min-height: 4em; }
-
-.theme-caltech .panel-flexible.home .cta-callout .teaser-cont .item-list {
-  display: none; }
-
-@media only screen and (min-width: 40.0625em) {
-  /* min-width 641px, medium screens */
-  .theme-caltech .backgrounded .cta-callout .imgHolder {
-    padding: 0; }
-
-  .theme-caltech .panel-flexible.home .cta-callout .cta-title {
-    padding: 0.8125rem; }
-
-  .theme-caltech .panel-flexible.home .cta-callout .teaser-cont {
-    padding: 0 0.8125rem 0.8125rem; } }
-/**
- * Events
- */
-.theme-caltech .view-home-events .view-content {
-  margin-bottom: 1.21875rem;
-  /* 1.5 × 0.8125; to make room for `more-link` */ }
-
-.theme-caltech .view-home-events .views-field-title {
-  margin-bottom: 0;
+.theme-caltech.landing-panel .main-content .content .view-block-grid ul {
+  margin: 0.46875rem;
+  padding-top: 0.46875rem; }
+.theme-caltech.landing-panel .view-landing-slider .views-row {
+  margin-bottom: 0.9375rem;
+  padding: 0 0.46875rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
-
-.theme-caltech .view-home-events .views-field-field-event-date {
-  font-size: 0.85rem;
-  font-style: italic; }
-
-.theme-caltech .view-home-events .views-field-body {
-  font-size: 0.9rem; }
+  .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-title {
+    display: none; }
+  .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+    bottom: 0;
+    font-size: 1rem;
+    padding: 0.9375rem;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; }
+    .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body::after {
+      color: #ff720c;
+      content: " ▸"; }
+    .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body a {
+      color: #fff;
+      font-family: "VaudMedium", Arial, sans-serif;
+      font-size: 1rem; }
+.theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-field-field-slideshow-image {
+  background-color: #696b73; }
+.theme-caltech.landing-panel .view-landing-slider .views-row-1 .views-fieldset.text-wrapper {
+  color: #fff;
+  padding: 0.9375rem;
+  position: absolute;
+  top: 0; }
+.theme-caltech.landing-panel .view-landing-slider .views-fieldset.wrapper {
+  position: relative; }
+.theme-caltech.landing-panel .view-landing-slider .views-field-title {
+  color: #fff;
+  font-family: "VaudMedium", Arial, sans-serif;
+  text-transform: uppercase; }
 
 /**
- * CaltechAUTHORS
+ * SEARCH
  */
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
+.theme-caltech:not(.front):not(.page-multisearch):not(.page-eds) #search {
   display: none; }
 
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article > a:last-of-type {
-  display: none; }
-
-@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-  /* min-width 641px and max-width 1024px, medium screens only */
-  .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
-    display: none; } }
 /**
- * LOCATIONS & HOURS
+ * VIEW: DIRECTORY
  */
-.theme-caltech .view-hours-locations .attachment {
-  margin: 0 -0.9375rem;
-  max-width: none;
-  overflow: auto;
-  padding-bottom: 1.875rem;
-  width: auto; }
-
-.theme-caltech .view-hours-locations .attachment .view-content .item-list ul {
-  margin: 0.9375rem;
-  padding: 0 0 0.9375rem 0; }
-
-.theme-caltech .view-hours-locations .view-content > .row {
-  padding-bottom: 1.875rem; }
-
-@media only screen and (min-width: 40.0625em) {
-  /* min-width 641px, medium screens */
-  .theme-caltech .view-hours-locations .attachment {
-    padding-bottom: 3.25rem; }
-
-  .theme-caltech .view-hours-locations .view-content > .row {
-    padding-bottom: 3.25rem; } }
-/**
- * SOFTWARE
- */
-.theme-caltech .view-software .view-header h2 {
-  display: none; }
+.not-front .section-wrapper .main-content .view-directory .block-grid-list {
+  margin: 0; }
+  .not-front .section-wrapper .main-content .view-directory .block-grid-list li {
+    padding-left: 0;
+    padding-right: 0; }
+.view-directory .large-6:only-of-type {
+  width: 100%; }

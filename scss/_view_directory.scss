@@ -1,0 +1,13 @@
+/**
+ * VIEW: DIRECTORY
+ */
+.view-directory {
+  .not-front .section-wrapper .main-content & {
+    .block-grid-list {
+      @include block-grid-list();
+    }
+  }
+  .large-6:only-of-type {
+    width: 100%;
+  }
+}

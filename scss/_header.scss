@@ -1,0 +1,31 @@
+/**
+ * HEADER
+ */
+/* @TODO Remove `html` class when `theme-caltech` is removed from theme. */
+.html.theme-caltech #top-header {
+  height: auto;
+}
+
+.theme-caltech #top-header #block-views-hours-today-top {
+  margin-left: 0;
+}
+.theme-caltech #top-header .top-menu {
+  padding: 0 (0.9375rem * 2) 0 0;
+  .content li a {
+    font-size: 0.75rem;
+    letter-spacing: normal;
+  }
+}
+.theme-caltech #top-header #block-hf-basic-search-hf-basic-search {
+  bottom: 0;
+  margin-right: 0;
+  position: absolute;
+  right: 0.9375rem;
+  width: auto;
+}
+/**
+ * Main Menu
+ */
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
+  font-weight: normal;
+}
