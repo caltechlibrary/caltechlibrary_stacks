@@ -85,12 +85,6 @@
   width: auto; }
 
 /**
- * Main Menu
- */
-.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
-  font-weight: normal; }
-
-/**
  * HOME PANEL
  */
 .theme-caltech .panels-flexible-region .pane-block {
@@ -348,6 +342,12 @@ img[class*="file-right-"] {
   color: #fff;
   font-family: "VaudMedium", Arial, sans-serif;
   text-transform: uppercase; }
+
+/**
+ * MAIN MENU
+ */
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
+  font-weight: normal; }
 
 /**
  * SEARCH
