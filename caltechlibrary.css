@@ -290,6 +290,20 @@
   color: #ff720c; }
 
 /**
+ * IMAGE STYLES
+ *
+ * Image style machine names are created with the pattern: alignment_size. This
+ * way we can use attribute selectors to target the same alignments together.
+ */
+img[class*="file-center-"] {
+  display: block;
+  margin: 0 auto; }
+img[class*="file-left-"] {
+  float: left; }
+img[class*="file-right-"] {
+  float: right; }
+
+/**
  * LANDING PAGES
  */
 .theme-caltech.landing-panel .main-content > div > .content {

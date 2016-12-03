@@ -1,0 +1,18 @@
+/**
+ * IMAGE STYLES
+ *
+ * Image style machine names are created with the pattern: alignment_size. This
+ * way we can use attribute selectors to target the same alignments together.
+ */
+img {
+  &[class*="file-center-"] {
+    display: block;
+    margin: 0 auto;
+  }
+  &[class*="file-left-"] {
+    float: left;
+  }
+  &[class*="file-right-"] {
+    float: right;
+  }
+}
