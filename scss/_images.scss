@@ -10,9 +10,13 @@ img {
     margin: 0 auto;
   }
   &[class*="file-left-"] {
+    clear: left;
     float: left;
+    margin-right: ($column-gutter / 2);
   }
   &[class*="file-right-"] {
+    clear: right;
     float: right;
+    margin-left: ($column-gutter / 2);
   }
 }

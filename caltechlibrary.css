@@ -293,9 +293,13 @@ img[class*="file-center-"] {
   display: block;
   margin: 0 auto; }
 img[class*="file-left-"] {
-  float: left; }
+  clear: left;
+  float: left;
+  margin-right: 0.9375rem; }
 img[class*="file-right-"] {
-  float: right; }
+  clear: right;
+  float: right;
+  margin-left: 0.9375rem; }
 
 /**
  * LANDING PAGES
