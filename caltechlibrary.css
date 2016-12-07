@@ -100,15 +100,12 @@
  * HOME PANEL
  */
 .theme-caltech .panel-flexible.home .panels-flexible-row {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  width: 100%; }
 
-.theme-caltech .backgrounded.persian-green .cta-callout,
-.theme-caltech .backgrounded.persian-green .panels-flexible-row-inside {
-  background-color: #00afab; }
-.theme-caltech .backgrounded.solid-pink .cta-callout,
-.theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside {
-  background-color: #7a303f; }
-
+/**
+ * Rows
+ */
 @media only screen and (min-width: 40.0625em) {
   .theme-caltech .backgrounded .panels-flexible-row-inside {
     padding-right: 0.46875rem; } }
@@ -143,36 +140,54 @@
     .theme-caltech .backgrounded .cta-callout .columns + .columns:last-child > span {
       margin-right: 0; } }
 
+.theme-caltech .boxed .cta-callout .inner-content > div > span {
+  border-style: solid !important;
+  border-width: 1px !important;
+  padding: 0; }
+.theme-caltech .boxed .cta-callout .imgHolder {
+  margin: 0; }
+.theme-caltech .boxed .cta-callout .wrap-details {
+  padding-left: 0.46875rem; }
+  @media only screen and (min-width: 40.0625em) {
+    .theme-caltech .boxed .cta-callout .wrap-details {
+      padding-left: 0; } }
+.theme-caltech .boxed .cta-callout .columns + .columns:last-child .imgHolder {
+  margin-right: 0; }
+.theme-caltech .boxed .cta-callout .columns + .columns:last-child .wrap-details {
+  margin-right: 0; }
+
+.theme-caltech .backgrounded.persian-green .cta-callout,
+.theme-caltech .backgrounded.persian-green .panels-flexible-row-inside {
+  background-color: #00afab; }
+.theme-caltech .backgrounded.solid-pink .cta-callout,
+.theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside {
+  background-color: #7a303f; }
+
 .theme-caltech .boxed .cta-callout {
-  background-color: white; }
+  background-color: #fff; }
   .theme-caltech .boxed .cta-callout .inner-content > div > span {
     background-color: #c8c8c8;
-    border: 1px solid #696b73 !important;
-    padding: 0; }
-  .theme-caltech .boxed .cta-callout .imgHolder {
-    margin: 0; }
-  .theme-caltech .boxed .cta-callout .wrap-details {
-    padding-left: 0.46875rem; }
-    @media only screen and (min-width: 40.0625em) {
-      .theme-caltech .boxed .cta-callout .wrap-details {
-        padding-left: 0; } }
-  .theme-caltech .boxed .cta-callout .columns + .columns:last-child .imgHolder {
-    margin-right: 0; }
-  .theme-caltech .boxed .cta-callout .columns + .columns:last-child .wrap-details {
-    margin-right: 0; }
+    border-color: #696b73 !important; }
 
-.theme-caltech .backgrounded .blk-title {
-  animation: none;
+/**
+ * Services
+ */
+.theme-caltech .view-home-services .views-field-field-title {
+  margin-top: 0.46875rem; }
+
+/**
+ * Panel Panes
+ */
+.theme-caltech .panels-flexible-region .blk-title {
+  padding: 0.9375rem; }
+
+.theme-caltech .panels-flexible-region .panel-pane {
   margin: 0;
   padding: 0.9375rem; }
 
-.theme-caltech .backgrounded .blk-title::after {
-  content: none; }
-
-.theme-caltech .backgrounded .panel-pane {
-  margin: 0;
-  padding: 0.9375rem; }
-
+/**
+ * Panel Pane Menus
+ */
 .theme-caltech .panel-flexible.home .pane-menu .menu {
   margin: 0; }
 
@@ -182,19 +197,25 @@
   margin: 0;
   padding: 0; }
 
+.theme-caltech .panel-flexible.home .pane-menu .leaf::before {
+  color: #ff6e1e; }
+
+/**
+ * Panel Pane More Links
+ */
 .theme-caltech .panel-flexible.home .more-link {
-  bottom: 1.21875rem;
-  /* 1.5 × 0.8125 */
+  bottom: 0.9375rem;
   position: absolute;
-  right: 1.625rem;
-  /* 2 × 0.8125 */ }
+  right: 0.9375rem; }
 
 /**
  * Events
  */
+.theme-caltech .view-home-events {
+  padding: 0; }
+
 .theme-caltech .view-home-events .view-content {
-  margin-bottom: 1.21875rem;
-  /* 1.5 × 0.8125; to make room for `more-link` */ }
+  margin-bottom: 1.875rem; }
 
 .theme-caltech .view-home-events .views-field-title {
   -moz-osx-font-smoothing: grayscale;
@@ -203,6 +224,9 @@
 /**
  * CaltechAUTHORS
  */
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .publication-list {
+  margin-bottom: 1.875rem; }
+
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
   display: none; }
 

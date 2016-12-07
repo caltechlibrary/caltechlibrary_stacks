@@ -3,28 +3,20 @@
  */
 .theme-caltech .panel-flexible.home .panels-flexible-row {
   margin-bottom: $column-gutter;
+  width: 100%;
 }
 
-// Color options.
-.theme-caltech .backgrounded {
-  &.persian-green {
-    .cta-callout,
-    .panels-flexible-row-inside {
-      background-color: $persian-green;
-    }
-  }
-  &.solid-pink {
-    .cta-callout,
-    .panels-flexible-row-inside {
-      background-color: $solid-pink;
-    }
-  }
-}
-
-// Margins for background color.
+/**
+ * Rows
+ */
+// Set up margins and padding for background colors.
 .theme-caltech .backgrounded {
   .panels-flexible-row-inside {
     @media #{$medium-up} {
+      // We set padding on the parent for the right side background to show
+      // through because adding an extra right side margin on the last item
+      // causes the percent calculation to be inaccurate, especially for the
+      // 25% width callout boxes.
       padding-right: ($column-gutter / 4);
     }
   }
@@ -60,15 +52,13 @@
     }
   }
 }
-
-// Boxed Callout.
+// Allow for bordered boxes on callouts.
 .theme-caltech .boxed .cta-callout {
-  background-color: white;
   .inner-content {
     & > div {
       & > span {
-        background-color: $silver;
-        border: 1px solid $shuttle !important;
+        border-style: solid !important;
+        border-width: 1px !important;
         padding: 0;
       }
     }
@@ -89,20 +79,54 @@
     margin-right: 0;
   }
 }
+// Color options.
+.theme-caltech .backgrounded {
+  &.persian-green {
+    .cta-callout,
+    .panels-flexible-row-inside {
+      background-color: $persian-green;
+    }
+  }
+  &.solid-pink {
+    .cta-callout,
+    .panels-flexible-row-inside {
+      background-color: $solid-pink;
+    }
+  }
+}
+.theme-caltech .boxed .cta-callout {
+  background-color: $white;
+  .inner-content {
+    & > div {
+      & > span {
+        background-color: $silver;
+        border-color: $shuttle !important;
+      }
+    }
+  }
+}
 
-.theme-caltech .backgrounded .blk-title {
-  animation: none;
+/**
+ * Services
+ */
+.theme-caltech .view-home-services .views-field-field-title {
+  margin-top: ($column-gutter / 4);
+}
+
+/**
+ * Panel Panes
+ */
+.theme-caltech .panels-flexible-region .blk-title {
+  padding: ($column-gutter / 2);
+}
+.theme-caltech .panels-flexible-region .panel-pane {
   margin: 0;
   padding: ($column-gutter / 2);
 }
-.theme-caltech .backgrounded .blk-title::after {
-  content: none;
-}
-.theme-caltech .backgrounded .panel-pane {
-  margin: 0;
-  padding: ($column-gutter / 2);
-}
 
+/**
+ * Panel Pane Menus
+ */
 .theme-caltech .panel-flexible.home .pane-menu .menu {
   margin: 0;
 }
@@ -112,19 +136,27 @@
   margin: 0;
   padding: 0;
 }
+.theme-caltech .panel-flexible.home .pane-menu .leaf::before {
+  color: $orange;
+}
+
+/**
+ * Panel Pane More Links
+ */
 .theme-caltech .panel-flexible.home .more-link {
-  bottom: 1.21875rem; /* 1.5 × 0.8125 */
+  bottom: ($column-gutter / 2);
   position: absolute;
-  right: 1.625rem; /* 2 × 0.8125 */
+  right: ($column-gutter / 2);
 }
 
 /**
  * Events
  */
-.theme-caltech .backgrounded .panels-flexible-region-home-left_-inside { // @TODO temporary
+.theme-caltech .view-home-events {
+  padding: 0;
 }
 .theme-caltech .view-home-events .view-content {
-  margin-bottom: 1.21875rem; /* 1.5 × 0.8125; to make room for `more-link` */
+  margin-bottom: $column-gutter;
 }
 .theme-caltech .view-home-events .views-field-title {
   -moz-osx-font-smoothing: grayscale;
@@ -134,7 +166,8 @@
 /**
  * CaltechAUTHORS
  */
-.theme-caltech .backgrounded .panels-flexible-region-home-center-inside { // @TODO temporary
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .publication-list {
+  margin-bottom: $column-gutter;
 }
 .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
   display: none;
