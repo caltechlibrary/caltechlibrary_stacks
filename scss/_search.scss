@@ -4,3 +4,26 @@
 .theme-caltech:not(.front):not(.page-multisearch):not(.page-eds) #search {
   display: none;
 }
+.theme-caltech .block-hf-stacks-search {
+  background-color: $silver !important;
+  border: 1px solid $silver;
+  .content input#searchSubmit,
+  .content input#searchSubmit[disabled],
+  .content input#searchSubmit[disabled]:hover {
+    background-color: $orange !important;
+    border: none;
+  }
+}
+.theme-caltech .view-id-home_search_resources {
+  a:link, a:focus, a:active, a {
+    background-color: $orange !important;
+    border: none;
+    color: $white !important;
+    font-family: $font-family-sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem;
+    &:hover {
+      color: $white !important;
+    }
+  }
+}

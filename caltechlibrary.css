@@ -362,6 +362,25 @@ img[class*="file-right-"] {
 .theme-caltech:not(.front):not(.page-multisearch):not(.page-eds) #search {
   display: none; }
 
+.theme-caltech .block-hf-stacks-search {
+  background-color: #c8c8c8 !important;
+  border: 1px solid #c8c8c8; }
+  .theme-caltech .block-hf-stacks-search .content input#searchSubmit,
+  .theme-caltech .block-hf-stacks-search .content input#searchSubmit[disabled],
+  .theme-caltech .block-hf-stacks-search .content input#searchSubmit[disabled]:hover {
+    background-color: #ff6e1e !important;
+    border: none; }
+
+.theme-caltech .view-id-home_search_resources a:link, .theme-caltech .view-id-home_search_resources a:focus, .theme-caltech .view-id-home_search_resources a:active, .theme-caltech .view-id-home_search_resources a {
+  background-color: #ff6e1e !important;
+  border: none;
+  color: #fff !important;
+  font-family: "Vaud", Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem; }
+  .theme-caltech .view-id-home_search_resources a:link:hover, .theme-caltech .view-id-home_search_resources a:focus:hover, .theme-caltech .view-id-home_search_resources a:active:hover, .theme-caltech .view-id-home_search_resources a:hover {
+    color: #fff !important; }
+
 /**
  * VIEW: DIRECTORY
  */
