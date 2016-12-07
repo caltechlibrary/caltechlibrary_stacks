@@ -4,6 +4,17 @@
 .theme-caltech #header .main-nav {
   border-bottom: 1px solid $orange;
 }
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded:hover > a {
+  color: $shuttle;
+}
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li.expanded > ul li a:hover {
+  background-color: $orange;
+}
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
   font-weight: normal;
+}
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a.active-trail::before,
+.theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a.active.active-trail::before {
+  bottom: -18px;
+  color: $orange;
 }
