@@ -4,3 +4,10 @@
 // Many of these are set by Foundation or the sub-theme settings.
 //
 $column-gutter: 1.875rem; // rem-calc(30);
+
+$font-family-sans-serif: 'Vaud', Arial, sans-serif;
+$font-family-sans-serif-heavy: 'VaudMedium', Arial, sans-serif;
+$font-family-serif: 'KievitSlabMedium', Georgia, serif;
+
+$medium-up: "only screen and (min-width: 40.0625em)" !default; // 641px
+$medium-only: "only screen and (min-width: 40.0625em) and (max-width: 64em)" !default; // 641px to 1024px

@@ -228,7 +228,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
   .theme-caltech .view-home-slider .views-field-field-body::after {
-    color: #ff720c;
+    color: #ff6e1e;
     content: " ▸"; }
   .theme-caltech .view-home-slider .views-field-field-body a {
     color: #fff;
@@ -327,7 +327,7 @@ img[class*="file-right-"] {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased; }
     .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body::after {
-      color: #ff720c;
+      color: #ff6e1e;
       content: " ▸"; }
     .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body a {
       color: #fff;
