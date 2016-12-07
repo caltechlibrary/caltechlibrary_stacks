@@ -350,6 +350,9 @@ img[class*="file-right-"] {
 /**
  * MAIN MENU
  */
+.theme-caltech #header .main-nav {
+  border-bottom: 1px solid #ff6e1e; }
+
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a {
   font-weight: normal; }
 
