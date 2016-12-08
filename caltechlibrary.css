@@ -74,6 +74,16 @@
   margin: 0; }
 
 /**
+ * FOOTER
+ */
+.theme-caltech #footer {
+  margin-top: 0; }
+  .theme-caltech #footer .section {
+    background-color: #696b73;
+    padding-bottom: 0.9375rem;
+    padding-top: 1.875rem; }
+
+/**
  * HEADER
  */
 /**

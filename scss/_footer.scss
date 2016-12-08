@@ -1,0 +1,11 @@
+/**
+ * FOOTER
+ */
+.theme-caltech #footer {
+  margin-top: 0;
+  .section {
+    background-color: $shuttle;
+    padding-bottom: ($column-gutter / 2);
+    padding-top: $column-gutter;
+  }
+}
