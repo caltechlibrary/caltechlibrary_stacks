@@ -9,5 +9,9 @@ $font-family-sans-serif: 'Vaud', Arial, sans-serif;
 $font-family-sans-serif-heavy: 'VaudMedium', Arial, sans-serif;
 $font-family-serif: 'KievitSlabMedium', Georgia, serif;
 
+$small-only: "only screen and (max-width: 40em)" !default; // 640px
+
 $medium-up: "only screen and (min-width: 40.0625em)" !default; // 641px
 $medium-only: "only screen and (min-width: 40.0625em) and (max-width: 64em)" !default; // 641px to 1024px
+
+$large-up: "only screen and (min-width: 64.063em)" !default; // 1025px

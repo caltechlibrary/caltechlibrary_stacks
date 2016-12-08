@@ -109,7 +109,10 @@
 /**
  * Services
  */
-.theme-caltech .view-home-services .views-field-field-title {
+.theme-caltech .view-id-home_services {
+  margin-bottom: 0;
+}
+.theme-caltech .view-id-home_services .views-field-field-title {
   margin-top: ($column-gutter / 4);
 }
 

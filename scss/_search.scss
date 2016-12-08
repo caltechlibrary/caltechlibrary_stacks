@@ -6,12 +6,18 @@
 }
 .theme-caltech .block-hf-stacks-search {
   background-color: $silver !important;
-  border: 1px solid $silver;
-  .content input#searchSubmit,
-  .content input#searchSubmit[disabled],
-  .content input#searchSubmit[disabled]:hover {
-    background-color: $orange !important;
-    border: none;
+  border: none;
+  margin-bottom: ($column-gutter / 2);
+  .content {
+    @media #{$small-only} {
+      padding: 0;
+    }
+    input#searchSubmit,
+    input#searchSubmit[disabled],
+    input#searchSubmit[disabled]:hover {
+      background-color: $orange !important;
+      border: none;
+    }
   }
 }
 .theme-caltech .view-id-home_search_resources {
@@ -24,6 +30,12 @@
     padding: 0.75rem;
     &:hover {
       color: $white !important;
+    }
+  }
+  [class*="block-grid-"] > li {
+    padding: 0 ($column-gutter / 8) ($column-gutter / 4);
+    @media #{$medium-up} {
+      padding: 0 ($column-gutter / 4) ($column-gutter / 2);
     }
   }
 }
