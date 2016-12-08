@@ -193,6 +193,19 @@
   margin-top: 0.46875rem; }
 
 /**
+ * Callout
+ */
+/* @TODO Remove `.html` when `theme-caltech` class is removed from theme. */
+.html.theme-caltech .cta-callout .cta-title {
+  font-family: "Vaud", Arial, sans-serif; }
+  @media only screen and (min-width: 40.0625em) {
+    .html.theme-caltech .cta-callout .cta-title {
+      padding: 0.9375rem; } }
+  @media only screen and (min-width: 40.0625em) {
+    .html.theme-caltech .cta-callout .cta-title .teaser-cont {
+      padding: 0 0.9375rem 0.9375rem; } }
+
+/**
  * Panel Panes
  */
 .theme-caltech .panels-flexible-region .blk-title {

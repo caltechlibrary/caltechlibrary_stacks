@@ -123,6 +123,24 @@
 }
 
 /**
+ * Callout
+ */
+/* @TODO Remove `.html` when `theme-caltech` class is removed from theme. */
+.html.theme-caltech .cta-callout {
+  .cta-title {
+    font-family: $font-family-sans-serif;
+    @media #{$medium-up} {
+      padding: ($column-gutter / 2);
+    }
+    .teaser-cont {
+      @media #{$medium-up} {
+        padding: 0 ($column-gutter / 2) ($column-gutter / 2);
+      }
+    }
+  }
+}
+
+/**
  * Panel Panes
  */
 .theme-caltech .panels-flexible-region .blk-title {
