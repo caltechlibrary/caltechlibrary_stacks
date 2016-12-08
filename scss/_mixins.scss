@@ -13,10 +13,10 @@
 
 // Assumes parent element has `position: relative;` rule.
 @mixin image-title-link() {
-  background-image: linear-gradient(to bottom, transparent, rgba($black, 0.7));
+  background-image: linear-gradient(to bottom, transparent, rgba($black, 0.8));
   bottom: 0;
   font-size: 1rem;
-  padding: 0.9375rem;
+  padding: ($column-gutter * 2) ($column-gutter / 4) ($column-gutter / 2) ($column-gutter / 2);
   position: absolute;
   text-align: right;
   width: 100%;

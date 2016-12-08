@@ -149,21 +149,23 @@
     .theme-caltech .backgrounded .cta-callout .columns + .columns:last-child > span {
       margin-right: 0; } }
 
-.theme-caltech .boxed .cta-callout .inner-content > div > span {
-  border-style: solid !important;
-  border-width: 1px !important;
-  padding: 0; }
-.theme-caltech .boxed .cta-callout .imgHolder {
-  margin: 0; }
-.theme-caltech .boxed .cta-callout .wrap-details {
-  padding-left: 0.46875rem; }
-  @media only screen and (min-width: 40.0625em) {
-    .theme-caltech .boxed .cta-callout .wrap-details {
-      padding-left: 0; } }
-.theme-caltech .boxed .cta-callout .columns + .columns:last-child .imgHolder {
-  margin-right: 0; }
-.theme-caltech .boxed .cta-callout .columns + .columns:last-child .wrap-details {
-  margin-right: 0; }
+.theme-caltech .boxed .cta-callout {
+  background-color: #fff; }
+  .theme-caltech .boxed .cta-callout .inner-content > div > span {
+    background-color: #c8c8c8;
+    border: 1px solid #696b73 !important;
+    padding: 0; }
+  .theme-caltech .boxed .cta-callout .imgHolder {
+    margin: 0; }
+  .theme-caltech .boxed .cta-callout .wrap-details {
+    padding-left: 0.46875rem; }
+    @media only screen and (min-width: 40.0625em) {
+      .theme-caltech .boxed .cta-callout .wrap-details {
+        padding-left: 0; } }
+  .theme-caltech .boxed .cta-callout .columns + .columns:last-child .imgHolder {
+    margin-right: 0; }
+  .theme-caltech .boxed .cta-callout .columns + .columns:last-child .wrap-details {
+    margin-right: 0; }
 
 .theme-caltech .backgrounded.persian-green .cta-callout,
 .theme-caltech .backgrounded.persian-green .panels-flexible-row-inside {
@@ -181,6 +183,9 @@
 /**
  * Services
  */
+.theme-caltech .home .services .panels-flexible-row-inside {
+  background-color: #fff; }
+
 .theme-caltech .view-id-home_services {
   margin-bottom: 0; }
 
@@ -247,18 +252,19 @@
   .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
     display: none; } }
 /**
- * HOME SLIDER
+ * Slider
  */
 .theme-caltech .view-home-slider .views-field-field-body {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
   bottom: 0;
   font-size: 1rem;
-  padding: 0.9375rem;
+  padding: 3.75rem 0.46875rem 0.9375rem 0.9375rem;
   position: absolute;
   text-align: right;
   width: 100%;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  border-top: none; }
   .theme-caltech .view-home-slider .views-field-field-body::after {
     color: #ff6e1e;
     content: " ▸"; }
@@ -267,53 +273,14 @@
     font-family: "VaudMedium", Arial, sans-serif;
     font-size: 1rem; }
 
-/* bxSlider uses an ID that must be overriden with !important in some cases. */
-.theme-caltech .panel-flexible.home .backgrounded .pane-views-home-slider-block {
+.theme-caltech .panel-flexible.home .pane-views-home-slider-block {
   padding: 0; }
 
-.theme-caltech .attachment .view-home-slider {
-  border: none; }
-
-.theme-caltech .bx-wrapper .bx-viewport {
-  border: none;
-  box-shadow: none;
-  left: 0; }
-
-.theme-caltech .bx-wrapper .bx-viewport ul {
-  margin-left: 0; }
-
-.theme-caltech .bx-wrapper .bx-controls-direction a {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  text-indent: 0 !important;
-  top: 50%;
-  z-index: auto !important; }
-
-.theme-caltech .bx-wrapper .bx-controls-direction a:hover {
-  background-color: white !important; }
-
-.theme-caltech .bx-wrapper .bx-next,
-.theme-caltech .bx-wrapper .bx-prev {
-  background: none; }
-
-.theme-caltech .bx-wrapper .bx-next::before,
-.theme-caltech .bx-wrapper .bx-prev::before {
-  color: rgba(255, 114, 12, 0.7);
-  font-family: fontAwesome;
-  font-size: 42px;
-  position: relative;
-  top: -15px; }
-
 .theme-caltech .bx-wrapper .bx-next::before {
-  content: "\f0da";
-  left: 10px; }
+  left: 3px; }
 
 .theme-caltech .bx-wrapper .bx-prev::before {
-  content: "\f0d9";
-  left: 6px; }
-
-.theme-caltech .bx-wrapper .bx-next:hover::before,
-.theme-caltech .bx-wrapper .bx-prev:hover::before {
-  color: #ff720c; }
+  left: 0px; }
 
 /**
  * IMAGE STYLES
@@ -349,10 +316,10 @@ img[class*="file-right-"] {
   .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-title {
     display: none; }
   .theme-caltech.landing-panel .view-landing-slider .views-row:not(.views-row-1) .views-field-field-body {
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
     bottom: 0;
     font-size: 1rem;
-    padding: 0.9375rem;
+    padding: 3.75rem 0.46875rem 0.9375rem 0.9375rem;
     position: absolute;
     text-align: right;
     width: 100%;

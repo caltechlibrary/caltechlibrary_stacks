@@ -53,12 +53,14 @@
   }
 }
 // Allow for bordered boxes on callouts.
+// Include `boxed` class in panel row.
 .theme-caltech .boxed .cta-callout {
+  background-color: $white;
   .inner-content {
     & > div {
       & > span {
-        border-style: solid !important;
-        border-width: 1px !important;
+        background-color: $silver;
+        border: 1px solid $shuttle !important;
         padding: 0;
       }
     }
@@ -79,7 +81,8 @@
     margin-right: 0;
   }
 }
-// Color options.
+// Background color options.
+// Include `backgrounded` class in panel row along with pre-defined color class.
 .theme-caltech .backgrounded {
   &.persian-green {
     .cta-callout,
@@ -109,6 +112,9 @@
 /**
  * Services
  */
+.theme-caltech .home .services .panels-flexible-row-inside {
+  background-color: $white;
+}
 .theme-caltech .view-id-home_services {
   margin-bottom: 0;
 }
@@ -182,80 +188,20 @@
 }
 
 /**
- * HOME SLIDER
+ * Slider
  */
 .theme-caltech .view-home-slider {
   .views-field-field-body {
     @include image-title-link();
+    border-top: none;
   }
 }
-
-// @TODO Rewrite with Sass.
-/* bxSlider uses an ID that must be overriden with !important in some cases. */
-.theme-caltech .panel-flexible.home .backgrounded .pane-views-home-slider-block {
+.theme-caltech .panel-flexible.home .pane-views-home-slider-block {
   padding: 0;
 }
-// .theme-caltech .view-home-slider .views-field-field-body {
-//   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
-//   bottom: 0;
-//   font-family: 'VaudMedium', sans-serif;
-//   font-size: 1rem;
-//   margin: 0;
-//   padding: 0.8125rem;
-//   position: absolute;
-//   text-align: right;
-//   width: 100%;
-//   -moz-osx-font-smoothing: grayscale;
-//   -webkit-font-smoothing: antialiased;
-// }
-// .theme-caltech .view-home-slider .views-field-field-body::after {
-//   color: rgb(255, 114, 12); /* #ff720c; orange */
-//   content: " ▸";
-// }
-// .theme-caltech .view-home-slider .views-field-field-body a {
-//   color: white;
-// }
-.theme-caltech .attachment .view-home-slider {
-  border: none;
-}
-.theme-caltech .bx-wrapper .bx-viewport {
-  border: none;
-  box-shadow: none;
-  left: 0;
-}
-.theme-caltech .bx-wrapper .bx-viewport ul {
-  margin-left: 0;
-}
-.theme-caltech .bx-wrapper .bx-controls-direction a {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  text-indent: 0 !important;
-  top: 50%;
-  z-index: auto !important;
-}
-.theme-caltech .bx-wrapper .bx-controls-direction a:hover {
-  background-color: rgba(255, 255, 255, 1) !important;
-}
-.theme-caltech .bx-wrapper .bx-next,
-.theme-caltech .bx-wrapper .bx-prev {
-  background: none;
-}
-.theme-caltech .bx-wrapper .bx-next::before,
-.theme-caltech .bx-wrapper .bx-prev::before {
-  color: rgba(255, 114, 12, 0.7);
-  font-family: fontAwesome;
-  font-size: 42px;
-  position: relative;
-  top: -15px;
-}
 .theme-caltech .bx-wrapper .bx-next::before {
-  content: "\f0da";
-  left: 10px;
+  left: 3px;
 }
 .theme-caltech .bx-wrapper .bx-prev::before {
-  content: "\f0d9";
-  left: 6px;
-}
-.theme-caltech .bx-wrapper .bx-next:hover::before,
-.theme-caltech .bx-wrapper .bx-prev:hover::before {
-  color: rgba(255, 114, 12, 1);
+  left: 0px;
 }
