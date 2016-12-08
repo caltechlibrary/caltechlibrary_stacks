@@ -108,62 +108,23 @@
 /**
  * HOME PANEL
  */
-.theme-caltech .panel-flexible.home .panels-flexible-row {
-  margin-bottom: 1.875rem;
-  width: 100%; }
-
-/**
- * Rows
- */
-@media only screen and (min-width: 40.0625em) {
-  .theme-caltech .backgrounded .panels-flexible-row-inside {
-    padding-right: 0.46875rem; } }
-.theme-caltech .backgrounded .cta-callout .inner-content > div > span,
-.theme-caltech .backgrounded .cta-callout .inner-content > div .panels-flexible-region-inside,
-.theme-caltech .backgrounded .panels-flexible-region > span,
-.theme-caltech .backgrounded .panels-flexible-region .panels-flexible-region-inside {
-  margin-bottom: 0;
-  margin-left: 0.46875rem;
-  margin-right: 0.46875rem;
-  margin-top: 0.46875rem; }
-  @media only screen and (min-width: 40.0625em) {
-    .theme-caltech .backgrounded .cta-callout .inner-content > div > span,
-    .theme-caltech .backgrounded .cta-callout .inner-content > div .panels-flexible-region-inside,
-    .theme-caltech .backgrounded .panels-flexible-region > span,
-    .theme-caltech .backgrounded .panels-flexible-region .panels-flexible-region-inside {
-      margin-bottom: 0.46875rem;
-      margin-right: 0; } }
-@media only screen and (min-width: 40.0625em) {
-  .theme-caltech .backgrounded .cta-callout .inner-content > div:last-of-type,
-  .theme-caltech .backgrounded .panels-flexible-region-last {
-    float: right !important;
-    margin-right: 0 !important; } }
-.theme-caltech .backgrounded .cta-callout .inner-content > div:last-of-type > span,
-.theme-caltech .backgrounded .cta-callout .inner-content > div:last-of-type .panels-flexible-region-inside,
-.theme-caltech .backgrounded .panels-flexible-region-last > span,
-.theme-caltech .backgrounded .panels-flexible-region-last .panels-flexible-region-inside {
-  margin-bottom: 0.46875rem; }
-.theme-caltech .backgrounded .cta-callout .columns + .columns:last-child > span {
-  margin-right: 0.46875rem; }
-  @media only screen and (min-width: 40.0625em) {
-    .theme-caltech .backgrounded .cta-callout .columns + .columns:last-child > span {
-      margin-right: 0; } }
-
-.theme-caltech .boxed .cta-callout .inner-content > div > span {
-  border-style: solid !important;
-  border-width: 1px !important;
-  padding: 0; }
-.theme-caltech .boxed .cta-callout .imgHolder {
-  margin: 0; }
-.theme-caltech .boxed .cta-callout .wrap-details {
-  padding-left: 0.46875rem; }
-  @media only screen and (min-width: 40.0625em) {
-    .theme-caltech .boxed .cta-callout .wrap-details {
-      padding-left: 0; } }
-.theme-caltech .boxed .cta-callout .columns + .columns:last-child .imgHolder {
-  margin-right: 0; }
-.theme-caltech .boxed .cta-callout .columns + .columns:last-child .wrap-details {
-  margin-right: 0; }
+.theme-caltech .boxed .cta-callout {
+  background-color: #fff; }
+  .theme-caltech .boxed .cta-callout .inner-content > div > span {
+    background-color: #c8c8c8;
+    border: 1px solid #696b73 !important;
+    padding: 0; }
+  .theme-caltech .boxed .cta-callout .imgHolder {
+    margin: 0; }
+  .theme-caltech .boxed .cta-callout .wrap-details {
+    padding-left: 0.46875rem; }
+    @media only screen and (min-width: 40.0625em) {
+      .theme-caltech .boxed .cta-callout .wrap-details {
+        padding-left: 0; } }
+  .theme-caltech .boxed .cta-callout .columns + .columns:last-child .imgHolder {
+    margin-right: 0; }
+  .theme-caltech .boxed .cta-callout .columns + .columns:last-child .wrap-details {
+    margin-right: 0; }
 
 .theme-caltech .backgrounded.persian-green .cta-callout,
 .theme-caltech .backgrounded.persian-green .panels-flexible-row-inside {
@@ -172,15 +133,12 @@
 .theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside {
   background-color: #7a303f; }
 
-.theme-caltech .boxed .cta-callout {
-  background-color: #fff; }
-  .theme-caltech .boxed .cta-callout .inner-content > div > span {
-    background-color: #c8c8c8;
-    border-color: #696b73 !important; }
-
 /**
  * Services
  */
+.theme-caltech .home .services .panels-flexible-row-inside {
+  background-color: #fff; }
+
 .theme-caltech .view-id-home_services {
   margin-bottom: 0; }
 
@@ -190,9 +148,6 @@
 /**
  * Panel Panes
  */
-.theme-caltech .panels-flexible-region .blk-title {
-  padding: 0.9375rem; }
-
 .theme-caltech .panels-flexible-region .panel-pane {
   margin: 0;
   padding: 0.9375rem; }
@@ -202,12 +157,6 @@
  */
 .theme-caltech .panel-flexible.home .pane-menu .menu {
   margin: 0; }
-
-.theme-caltech .panel-flexible.home .pane-menu .leaf {
-  font-size: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
 
 .theme-caltech .panel-flexible.home .pane-menu .leaf::before {
   color: #ff6e1e; }

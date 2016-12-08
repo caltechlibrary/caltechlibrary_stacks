@@ -1,64 +1,15 @@
 /**
  * HOME PANEL
  */
-.theme-caltech .panel-flexible.home .panels-flexible-row {
-  margin-bottom: $column-gutter;
-  width: 100%;
-}
-
-/**
- * Rows
- */
-// Set up margins and padding for background colors.
-.theme-caltech .backgrounded {
-  .panels-flexible-row-inside {
-    @media #{$medium-up} {
-      // We set padding on the parent for the right side background to show
-      // through because adding an extra right side margin on the last item
-      // causes the percent calculation to be inaccurate, especially for the
-      // 25% width callout boxes.
-      padding-right: ($column-gutter / 4);
-    }
-  }
-  .cta-callout .inner-content > div,
-  .panels-flexible-region {
-    & > span,
-    .panels-flexible-region-inside {
-      margin-bottom: 0; // override _base-module.scss:150
-      margin-left: ($column-gutter / 4);
-      margin-right: ($column-gutter / 4);
-      margin-top: ($column-gutter / 4);
-      @media #{$medium-up} {
-        margin-bottom: ($column-gutter / 4);
-        margin-right: 0;
-      }
-    }
-  }
-  .cta-callout .inner-content > div:last-of-type,
-  .panels-flexible-region-last {
-    @media #{$medium-up} {
-      float: right !important; // override _cta-callout.scss:4
-      margin-right: 0 !important; // override _base-module.scss:178
-    }
-    & > span,
-    .panels-flexible-region-inside {
-      margin-bottom: ($column-gutter / 4);
-    }
-  }
-  .cta-callout .columns + .columns:last-child > span { // override _cta-callout.scss:230
-    margin-right: ($column-gutter / 4);
-    @media #{$medium-up} {
-      margin-right: 0;
-    }
-  }
-}
 // Allow for bordered boxes on callouts.
+// Include `boxed` class in panel row.
 .theme-caltech .boxed .cta-callout {
+  background-color: $white;
   .inner-content {
     & > div {
       & > span {
-        border-style: solid !important;
-        border-width: 1px !important;
+        background-color: $silver;
+        border: 1px solid $shuttle !important;
         padding: 0;
       }
     }
@@ -79,7 +30,8 @@
     margin-right: 0;
   }
 }
-// Color options.
+// Background color options.
+// Include `backgrounded` class in panel row along with pre-defined color class.
 .theme-caltech .backgrounded {
   &.persian-green {
     .cta-callout,
@@ -94,21 +46,13 @@
     }
   }
 }
-.theme-caltech .boxed .cta-callout {
-  background-color: $white;
-  .inner-content {
-    & > div {
-      & > span {
-        background-color: $silver;
-        border-color: $shuttle !important;
-      }
-    }
-  }
-}
 
 /**
  * Services
  */
+.theme-caltech .home .services .panels-flexible-row-inside {
+  background-color: $white;
+}
 .theme-caltech .view-id-home_services {
   margin-bottom: 0;
 }
@@ -119,9 +63,6 @@
 /**
  * Panel Panes
  */
-.theme-caltech .panels-flexible-region .blk-title {
-  padding: ($column-gutter / 2);
-}
 .theme-caltech .panels-flexible-region .panel-pane {
   margin: 0;
   padding: ($column-gutter / 2);
@@ -132,12 +73,6 @@
  */
 .theme-caltech .panel-flexible.home .pane-menu .menu {
   margin: 0;
-}
-.theme-caltech .panel-flexible.home .pane-menu .leaf {
-  font-size: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .theme-caltech .panel-flexible.home .pane-menu .leaf::before {
   color: $orange;
