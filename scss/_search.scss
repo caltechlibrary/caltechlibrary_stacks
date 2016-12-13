@@ -22,14 +22,15 @@
 }
 .theme-caltech .view-id-home_search_resources {
   a:link, a:focus, a:active, a {
-    background-color: $orange !important;
+    background-color: $silver !important;
     border: none;
-    color: $white !important;
+    color: $black !important;
     font-family: $font-family-sans-serif;
     font-size: 1rem;
     padding: 0.75rem;
     &:hover {
-      color: $white !important;
+      color: $black !important;
+      text-decoration: underline;
     }
   }
   [class*="block-grid-"] > li {
