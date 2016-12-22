@@ -125,36 +125,23 @@
 .theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside {
   background-color: #7a303f; }
 
-.theme-caltech .boxed .cta-callout {
+.theme-caltech .boxed .panels-flexible-row-inside {
   background-color: #fff; }
-  .theme-caltech .boxed .cta-callout .inner-content > div > span {
-    background-color: #c8c8c8;
-    border-color: #696b73 !important; }
+.theme-caltech .boxed .cta-callout .inner-content > div > span {
+  background-color: #c8c8c8;
+  border-color: #696b73 !important; }
 
 /**
- * Services
+ * Notices
  */
-.theme-caltech .home .services .panels-flexible-row-inside {
-  background-color: #fff; }
-
-.theme-caltech .view-id-home_services {
-  margin-bottom: 0; }
-
-.theme-caltech .view-id-home_services .views-field-field-title {
-  margin-top: 0.46875rem; }
+.theme-caltech .home .notices .panels-flexible-row-inside {
+  background-color: transparent; }
 
 /**
- * Callout
+ * Slider
  */
-/* @TODO Remove `.html` when `theme-caltech` class is removed from theme. */
-.html.theme-caltech .cta-callout .cta-title {
-  font-family: "Vaud", Arial, sans-serif; }
-  @media only screen and (min-width: 40.0625em) {
-    .html.theme-caltech .cta-callout .cta-title {
-      padding: 0.9375rem; } }
-  @media only screen and (min-width: 40.0625em) {
-    .html.theme-caltech .cta-callout .cta-title .teaser-cont {
-      padding: 0 0.9375rem 0.9375rem; } }
+.theme-caltech .panel-flexible.home .pane-views-home-slider-block {
+  padding: 0; }
 
 /**
  * Panel Panes
@@ -180,6 +167,15 @@
 
 .theme-caltech .panel-flexible.home .pane-menu .leaf::before {
   color: #ff6e1e; }
+
+/**
+ * Services
+ */
+.theme-caltech .home .services .panels-flexible-row-inside {
+  background-color: #fff; }
+
+.theme-caltech .view-id-home_services .views-field-field-title {
+  margin-top: 0.46875rem; }
 
 /**
  * Panel Pane More Links
@@ -215,37 +211,6 @@
   /* min-width 641px and max-width 1024px, medium screens only */
   .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
     display: none; } }
-/**
- * Slider
- */
-.theme-caltech .view-home-slider .views-field-field-body {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
-  bottom: 0;
-  font-size: 1rem;
-  padding: 3.75rem 0.46875rem 0.9375rem 0.9375rem;
-  position: absolute;
-  text-align: right;
-  width: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  border-top: none; }
-  .theme-caltech .view-home-slider .views-field-field-body::after {
-    color: #ff6e1e;
-    content: " ▸"; }
-  .theme-caltech .view-home-slider .views-field-field-body a {
-    color: #fff;
-    font-family: "VaudMedium", Arial, sans-serif;
-    font-size: 1rem; }
-
-.theme-caltech .panel-flexible.home .pane-views-home-slider-block {
-  padding: 0; }
-
-.theme-caltech .bx-wrapper .bx-next::before {
-  left: 3px; }
-
-.theme-caltech .bx-wrapper .bx-prev::before {
-  left: 0px; }
-
 /**
  * IMAGE STYLES
  *
