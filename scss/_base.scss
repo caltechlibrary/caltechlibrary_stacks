@@ -11,6 +11,14 @@
   font-family: $font-family-sans-serif;
 }
 
+.theme-caltech.not-front .section-wrapper .main-content .content ul {
+  padding-bottom: 1rem;
+}
+
 .theme-caltech .section-wrapper {
   margin: 0;
+}
+
+.theme-caltech .ui-widget {
+  font-family: $font-family-sans-serif;
 }
