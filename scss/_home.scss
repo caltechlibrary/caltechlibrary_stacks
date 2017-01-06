@@ -91,6 +91,12 @@
       background-color: $persian-green;
     }
   }
+  &.regal-blue {
+    .cta-callout,
+    .panels-flexible-row-inside {
+      background-color: $regal-blue;
+    }
+  }
   &.solid-pink {
     .cta-callout,
     .panels-flexible-row-inside {
