@@ -153,7 +153,20 @@
 }
 .theme-caltech .panel-flexible.home .pane-menu .leaf::before {
   color: $orange;
+  // @TODO: Remove below when For Faculty menu is not longer needed.
+  font-family: fontAwesome;
+  font-size: 16px;
+  content: "\f0da";
+  left: 10px;
 }
+.theme-caltech .panel-flexible.home .pane-menu .leaf a {
+  margin-left: 7px;
+}
+.theme-caltech .panel-flexible.home .pane-menu,
+.theme-caltech .panel-flexible.home .pane-views-quick-links-block {
+  padding-top: 0;
+}
+// end @TODO.
 
 /**
  * Services
