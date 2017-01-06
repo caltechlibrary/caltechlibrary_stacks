@@ -11,6 +11,11 @@
 .html.theme-caltech h6 {
   font-family: "Vaud", Arial, sans-serif; }
 
+.theme-caltech b,
+.theme-caltech strong {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
 .theme-caltech.not-front .section-wrapper .main-content .content ul {
   padding-bottom: 1rem; }
 
