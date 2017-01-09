@@ -116,6 +116,7 @@
   .theme-caltech .boxed .cta-callout .inner-content > div > span {
     background-color: #c8c8c8;
     border: 1px solid #696b73 !important;
+    margin-bottom: 0.46875rem;
     margin-top: 0;
     padding: 0; }
   .theme-caltech .boxed .cta-callout .imgHolder {

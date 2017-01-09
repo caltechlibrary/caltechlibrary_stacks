@@ -61,6 +61,7 @@
       & > span {
         background-color: $silver;
         border: 1px solid $shuttle !important;
+        margin-bottom: ($column-gutter / 4);
         margin-top: 0;
         padding: 0;
       }
