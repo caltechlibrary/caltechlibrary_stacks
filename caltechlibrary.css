@@ -373,6 +373,14 @@ img[class*="file-right-"] {
     .theme-caltech .view-id-home_search_resources [class*="block-grid-"] > li {
       padding: 0 0.46875rem 0.9375rem; } }
 
+.theme-caltech .main-content .search-note {
+  margin-bottom: 1.875rem;
+  margin-top: -1rem;
+  padding: 0; }
+  @media only screen and (min-width: 40.0625em) {
+    .theme-caltech .main-content .search-note {
+      margin-top: -2rem; } }
+
 /**
  * VIEW: DIRECTORY
  */

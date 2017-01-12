@@ -40,3 +40,12 @@
     }
   }
 }
+
+.theme-caltech .main-content .search-note {
+  margin-bottom: $column-gutter;
+  margin-top: -1rem;
+  padding: 0;
+  @media #{$medium-up} {
+    margin-top: -2rem;
+  }
+}
