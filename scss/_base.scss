@@ -19,6 +19,8 @@
 
 .theme-caltech.not-front .section-wrapper .main-content .content ul {
   padding-bottom: 1rem;
+  position: relative;
+  left: ($column-gutter / 2);
 }
 
 .theme-caltech .section-wrapper {

@@ -17,7 +17,9 @@
   -webkit-font-smoothing: antialiased; }
 
 .theme-caltech.not-front .section-wrapper .main-content .content ul {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  position: relative;
+  left: 0.9375rem; }
 
 .theme-caltech .section-wrapper {
   margin: 0; }
