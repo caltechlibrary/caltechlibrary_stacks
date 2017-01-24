@@ -268,10 +268,12 @@ img[class*="file-center-"] {
 img[class*="file-left-"] {
   clear: left;
   float: left;
+  margin-bottom: 0.9375rem;
   margin-right: 0.9375rem; }
 img[class*="file-right-"] {
   clear: right;
   float: right;
+  margin-bottom: 0.9375rem;
   margin-left: 0.9375rem; }
 
 /**
