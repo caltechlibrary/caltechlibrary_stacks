@@ -5,6 +5,10 @@
  * way we can use attribute selectors to target the same alignments together.
  */
 img {
+  &[class*="file-block-"] {
+    display: block;
+    margin-bottom: ($column-gutter / 2);
+  }
   &[class*="file-center-"] {
     display: block;
     margin: 0 auto;

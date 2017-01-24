@@ -265,6 +265,9 @@
  * Image style machine names are created with the pattern: alignment_size. This
  * way we can use attribute selectors to target the same alignments together.
  */
+img[class*="file-block-"] {
+  display: block;
+  margin-bottom: 0.9375rem; }
 img[class*="file-center-"] {
   display: block;
   margin: 0 auto; }
