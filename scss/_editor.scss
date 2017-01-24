@@ -1,0 +1,14 @@
+/**
+ * WYSIWYG EDITOR STYLES
+ *
+ * These styles allow content in the WYSIWYG editor window to display similarly
+ * to how content will be displayed when published.
+ */
+.cke_editable {
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  h2, h3, h4 {
+    font-weight: normal;
+  }
+}

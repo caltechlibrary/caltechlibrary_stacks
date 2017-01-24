@@ -26,6 +26,19 @@
   font-family: "Vaud", Arial, sans-serif; }
 
 /**
+ * WYSIWYG EDITOR STYLES
+ *
+ * These styles allow content in the WYSIWYG editor window to display similarly
+ * to how content will be displayed when published.
+ */
+.cke_editable {
+  font-family: "Vaud", Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6; }
+  .cke_editable h2, .cke_editable h3, .cke_editable h4 {
+    font-weight: normal; }
+
+/**
  * FOOTER
  */
 .theme-caltech #footer {
