@@ -17,9 +17,9 @@
   -webkit-font-smoothing: antialiased; }
 
 .theme-caltech.not-front .section-wrapper .main-content .content ul {
+  left: 0.9375rem;
   padding-bottom: 1rem;
-  position: relative;
-  left: 0.9375rem; }
+  position: relative; }
 
 .theme-caltech .section-wrapper {
   margin: 0; }
@@ -39,6 +39,9 @@
   line-height: 1.6; }
   .cke_editable h2, .cke_editable h3, .cke_editable h4 {
     font-weight: normal; }
+  .cke_editable ul {
+    left: 0.9375rem;
+    position: relative; }
 
 /**
  * FOOTER

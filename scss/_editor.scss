@@ -11,4 +11,8 @@
   h2, h3, h4 {
     font-weight: normal;
   }
+  ul {
+    left: ($column-gutter / 2);
+    position: relative;
+  }
 }
