@@ -21,6 +21,10 @@
   padding-bottom: 1rem;
   position: relative; }
 
+.theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
+  left: 0;
+  margin-left: 0; }
+
 .theme-caltech .section-wrapper {
   margin: 0; }
 
