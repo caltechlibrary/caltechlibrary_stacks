@@ -52,6 +52,9 @@
     background-color: #696b73;
     padding-bottom: 0.9375rem;
     padding-top: 1.875rem; }
+  .theme-caltech #footer img {
+    display: inline-block;
+    margin-bottom: 0; }
 
 /**
  * HEADER
@@ -173,6 +176,10 @@
 
 .theme-caltech .home .notices .cerulean {
   background-color: rgba(0, 168, 226, 0.5); }
+
+.theme-caltech .home .beta img {
+  display: inline-block;
+  margin-bottom: 0; }
 
 /**
  * Slider
