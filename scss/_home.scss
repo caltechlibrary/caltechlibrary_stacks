@@ -141,6 +141,30 @@
 .theme-caltech .panel-flexible.home .pane-views-home-slider-block {
   padding: 0;
 }
+.theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body {
+  color: rgb(255, 255, 255) !important;
+  font-family: VaudMedium, Arial, sans-serif;
+  font-size: 1rem;
+  &::after {
+    content: none;
+  }
+  a::after {
+    color: rgb(255, 110, 30);
+    content: "\f0da";
+    font-family: fontAwesome;
+    font-size: 1rem;
+    margin-left: ($column-gutter / 4);
+  }
+}
+.theme-caltech .bx-wrapper .bx-next,
+.theme-caltech .bx-wrapper .bx-prev {
+  &::before {
+    color: rgb(255, 110, 30);
+  }
+  &:hover::before {
+    background: rgba(255,255,255,.5);
+  }
+}
 
 /**
  * Panel Panes

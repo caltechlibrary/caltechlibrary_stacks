@@ -191,6 +191,26 @@
 .theme-caltech .panel-flexible.home .pane-views-home-slider-block {
   padding: 0; }
 
+.theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body {
+  color: white !important;
+  font-family: VaudMedium, Arial, sans-serif;
+  font-size: 1rem; }
+  .theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body::after {
+    content: none; }
+  .theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body a::after {
+    color: #ff6e1e;
+    content: "\f0da";
+    font-family: fontAwesome;
+    font-size: 1rem;
+    margin-left: 0.46875rem; }
+
+.theme-caltech .bx-wrapper .bx-next::before,
+.theme-caltech .bx-wrapper .bx-prev::before {
+  color: #ff6e1e; }
+.theme-caltech .bx-wrapper .bx-next:hover::before,
+.theme-caltech .bx-wrapper .bx-prev:hover::before {
+  background: rgba(255, 255, 255, 0.5); }
+
 /**
  * Panel Panes
  */
