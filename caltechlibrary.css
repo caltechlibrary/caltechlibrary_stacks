@@ -435,6 +435,7 @@ img[class*="file-right-"] {
     .theme-caltech .main-content .search-note {
       margin-top: -2rem; } }
   .theme-caltech .main-content .search-note .jquery-ui-filter-accordion-header {
+    font-size: 1rem;
     font-weight: normal; }
 
 /**
