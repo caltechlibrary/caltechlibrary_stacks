@@ -434,6 +434,8 @@ img[class*="file-right-"] {
   @media only screen and (min-width: 40.0625em) {
     .theme-caltech .main-content .search-note {
       margin-top: -2rem; } }
+  .theme-caltech .main-content .search-note .jquery-ui-filter-accordion-header {
+    font-weight: normal; }
 
 /**
  * VIEW: DIRECTORY

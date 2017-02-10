@@ -48,4 +48,7 @@
   @media #{$medium-up} {
     margin-top: -2rem;
   }
+  .jquery-ui-filter-accordion-header {
+    font-weight: normal;
+  }
 }
