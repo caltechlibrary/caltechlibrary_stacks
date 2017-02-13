@@ -21,6 +21,10 @@
   padding-bottom: 1rem;
   position: relative; }
 
+.theme-caltech.not-front .section-wrapper .main-content .content p + ul {
+  padding-bottom: 0;
+  padding-top: 0; }
+
 .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
   left: 0;
   margin-left: 0; }
@@ -29,6 +33,7 @@
   margin: 0; }
 
 .theme-caltech .ui-widget {
+  clear: both;
   font-family: "Vaud", Arial, sans-serif; }
 
 /**
