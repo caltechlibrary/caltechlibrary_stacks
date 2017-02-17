@@ -107,9 +107,18 @@
 /**
  * Rows
  */
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .theme-caltech .backgrounded .panels-flexible-row-inside {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+@media only screen and (min-width: 64.063em) {
   .theme-caltech .backgrounded .panels-flexible-row-inside {
     padding-right: 0.46875rem; } }
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .theme-caltech .backgrounded .cta-callout .inner-content > div,
+  .theme-caltech .backgrounded .panels-flexible-region {
+    -ms-flex: 1 0 50%;
+        flex: 1 0 50%; } }
 .theme-caltech .backgrounded .cta-callout .inner-content > div > span,
 .theme-caltech .backgrounded .cta-callout .inner-content > div .panels-flexible-region-inside,
 .theme-caltech .backgrounded .panels-flexible-region > span,
@@ -125,6 +134,13 @@
     .theme-caltech .backgrounded .panels-flexible-region .panels-flexible-region-inside {
       margin-bottom: 0.46875rem;
       margin-right: 0; } }
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .theme-caltech .backgrounded .panels-flexible-region-first {
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%; } }
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .theme-caltech .backgrounded .panels-flexible-region-first .panels-flexible-region-inside {
+    margin-bottom: 0; } }
 @media only screen and (min-width: 40.0625em) {
   .theme-caltech .backgrounded .cta-callout .inner-content > div:last-of-type,
   .theme-caltech .backgrounded .panels-flexible-region-last {
@@ -162,12 +178,15 @@
     margin-right: 0; }
 
 .theme-caltech .backgrounded.persian-green .cta-callout,
+.theme-caltech .backgrounded.persian-green .flexslider,
 .theme-caltech .backgrounded.persian-green .panels-flexible-row-inside {
   background-color: #00afab; }
 .theme-caltech .backgrounded.regal-blue .cta-callout,
+.theme-caltech .backgrounded.regal-blue .flexslider,
 .theme-caltech .backgrounded.regal-blue .panels-flexible-row-inside {
   background-color: #00506d; }
 .theme-caltech .backgrounded.solid-pink .cta-callout,
+.theme-caltech .backgrounded.solid-pink .flexslider,
 .theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside {
   background-color: #7a303f; }
 
@@ -191,30 +210,62 @@
   margin-bottom: 0; }
 
 /**
+ * FlexSlider
+ *
+ * Override default FlexSlider styles. The `.flexslider` class was also added
+ * above in the "Background color options" section.
+ */
+.theme-caltech .flexslider {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  overflow: hidden; }
+  .theme-caltech .flexslider .views-field-field-slideshow-image {
+    max-height: none; }
+    @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+      .theme-caltech .flexslider .views-field-field-slideshow-image {
+        width: 66.66667%; } }
+  .theme-caltech .flexslider .flex-caption {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+    bottom: 0;
+    color: #fff;
+    font-family: VaudMedium, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 3.75rem 0.9375rem 0.9375rem;
+    position: absolute;
+    text-align: right;
+    width: 100%; }
+    @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+      .theme-caltech .flexslider .flex-caption {
+        background-image: none;
+        padding: 0 0.46875rem;
+        right: 0;
+        text-align: left;
+        width: 33.33333%; } }
+    .theme-caltech .flexslider .flex-caption a {
+      color: #fff; }
+      .theme-caltech .flexslider .flex-caption a::after {
+        color: #ff6e1e;
+        content: "\f0da";
+        font-family: fontAwesome;
+        margin-left: 0.46875rem; }
+  .theme-caltech .flexslider .flex-direction-nav a {
+    height: 3.75rem; }
+    .theme-caltech .flexslider .flex-direction-nav a::before {
+      color: #ff6e1e;
+      font-family: fontAwesome;
+      text-shadow: none; }
+    .theme-caltech .flexslider .flex-direction-nav a.flex-next::before {
+      content: "\f0da"; }
+    .theme-caltech .flexslider .flex-direction-nav a.flex-prev::before {
+      content: "\f0d9"; }
+
+/**
  * Slider
  */
 .theme-caltech .panel-flexible.home .pane-views-home-slider-block {
   padding: 0; }
-
-.theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body {
-  color: white !important;
-  font-family: VaudMedium, Arial, sans-serif;
-  font-size: 1rem; }
-  .theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body::after {
-    content: none; }
-  .theme-caltech .panel-flexible.home .pane-views-home-slider-block .views-field-field-body a::after {
-    color: #ff6e1e;
-    content: "\f0da";
-    font-family: fontAwesome;
-    font-size: 1rem;
-    margin-left: 0.46875rem; }
-
-.theme-caltech .bx-wrapper .bx-next::before,
-.theme-caltech .bx-wrapper .bx-prev::before {
-  color: #ff6e1e; }
-.theme-caltech .bx-wrapper .bx-next:hover::before,
-.theme-caltech .bx-wrapper .bx-prev:hover::before {
-  background: rgba(255, 255, 255, 0.5); }
 
 /**
  * Panel Panes
