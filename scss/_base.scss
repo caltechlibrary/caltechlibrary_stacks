@@ -17,18 +17,21 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.theme-caltech.not-front .section-wrapper .main-content .content ol,
 .theme-caltech.not-front .section-wrapper .main-content .content ul {
-  left: ($column-gutter / 2);
-  padding-bottom: 1rem;
+  margin-left: 0;
+  overflow: hidden;
+  padding-bottom: ($column-gutter / 2);
+  padding-left: ($column-gutter / 2);
   position: relative;
 }
+.theme-caltech.not-front .section-wrapper .main-content .content p + ol,
 .theme-caltech.not-front .section-wrapper .main-content .content p + ul {
   padding-bottom: 0;
   padding-top: 0;
 }
 .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
   left: 0;
-  margin-left: 0;
 }
 
 .theme-caltech .section-wrapper {
