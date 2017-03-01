@@ -336,6 +336,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
+.theme-caltech .view-home-events .date-display-range {
+  display: inline; }
+
 /**
  * CaltechAUTHORS
  */
