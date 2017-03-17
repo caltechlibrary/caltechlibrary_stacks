@@ -105,21 +105,24 @@
   &.persian-green {
     .cta-callout,
     .flexslider,
-    .panels-flexible-row-inside {
+    .panels-flexible-row-inside,
+    &.triptych-top .panels-flexible-region:first-of-type .panels-flexible-region-inside {
       background-color: $persian-green;
     }
   }
   &.regal-blue {
     .cta-callout,
     .flexslider,
-    .panels-flexible-row-inside {
+    .panels-flexible-row-inside,
+    &.triptych-top .panels-flexible-region:first-of-type .panels-flexible-region-inside {
       background-color: $regal-blue;
     }
   }
   &.solid-pink {
     .cta-callout,
     .flexslider,
-    .panels-flexible-row-inside {
+    .panels-flexible-row-inside,
+    &.triptych-top .panels-flexible-region:first-of-type .panels-flexible-region-inside {
       background-color: $solid-pink;
     }
   }
@@ -236,31 +239,36 @@
 /**
  * Panel Pane Menus
  */
-.theme-caltech .panel-flexible.home .pane-menu .menu {
-  margin: 0;
+.theme-caltech .panel-flexible.home .pane-menu {
+  padding-bottom: 0;
+  padding-top: 0;
+  .menu {
+    margin: 0;
+  }
+  .leaf {
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &::before {
+      color: $orange;
+      // @TODO: Remove below when For Faculty menu is not longer needed. The
+      // theme takes care of the named Using the Library menu styles.
+      font-family: fontAwesome;
+      font-size: 16px;
+      content: "\f0da";
+      left: 10px;
+    }
+    a {
+      margin-left: 7px;
+    }
+    // end @TODO.
+  }
 }
-.theme-caltech .panel-flexible.home .pane-menu .leaf {
-  font-size: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.theme-caltech .panel-flexible.home .pane-menu .leaf::before {
-  color: $orange;
-  // @TODO: Remove below when For Faculty menu is not longer needed.
-  font-family: fontAwesome;
-  font-size: 16px;
-  content: "\f0da";
-  left: 10px;
-}
-.theme-caltech .panel-flexible.home .pane-menu .leaf a {
-  margin-left: 7px;
-}
-.theme-caltech .panel-flexible.home .pane-menu,
 .theme-caltech .panel-flexible.home .pane-views-quick-links-block {
+  padding-bottom: 0;
   padding-top: 0;
 }
-// end @TODO.
 
 /**
  * Services

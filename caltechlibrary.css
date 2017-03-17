@@ -182,15 +182,15 @@
 
 .theme-caltech .backgrounded.persian-green .cta-callout,
 .theme-caltech .backgrounded.persian-green .flexslider,
-.theme-caltech .backgrounded.persian-green .panels-flexible-row-inside {
+.theme-caltech .backgrounded.persian-green .panels-flexible-row-inside, .theme-caltech .backgrounded.persian-green.triptych-top .panels-flexible-region:first-of-type .panels-flexible-region-inside {
   background-color: #00afab; }
 .theme-caltech .backgrounded.regal-blue .cta-callout,
 .theme-caltech .backgrounded.regal-blue .flexslider,
-.theme-caltech .backgrounded.regal-blue .panels-flexible-row-inside {
+.theme-caltech .backgrounded.regal-blue .panels-flexible-row-inside, .theme-caltech .backgrounded.regal-blue.triptych-top .panels-flexible-region:first-of-type .panels-flexible-region-inside {
   background-color: #00506d; }
 .theme-caltech .backgrounded.solid-pink .cta-callout,
 .theme-caltech .backgrounded.solid-pink .flexslider,
-.theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside {
+.theme-caltech .backgrounded.solid-pink .panels-flexible-row-inside, .theme-caltech .backgrounded.solid-pink.triptych-top .panels-flexible-region:first-of-type .panels-flexible-region-inside {
   background-color: #7a303f; }
 
 .theme-caltech .boxed .panels-flexible-row-inside {
@@ -283,27 +283,27 @@
 /**
  * Panel Pane Menus
  */
-.theme-caltech .panel-flexible.home .pane-menu .menu {
-  margin: 0; }
+.theme-caltech .panel-flexible.home .pane-menu {
+  padding-bottom: 0;
+  padding-top: 0; }
+  .theme-caltech .panel-flexible.home .pane-menu .menu {
+    margin: 0; }
+  .theme-caltech .panel-flexible.home .pane-menu .leaf {
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .theme-caltech .panel-flexible.home .pane-menu .leaf::before {
+      color: #ff6e1e;
+      font-family: fontAwesome;
+      font-size: 16px;
+      content: "\f0da";
+      left: 10px; }
+    .theme-caltech .panel-flexible.home .pane-menu .leaf a {
+      margin-left: 7px; }
 
-.theme-caltech .panel-flexible.home .pane-menu .leaf {
-  font-size: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.theme-caltech .panel-flexible.home .pane-menu .leaf::before {
-  color: #ff6e1e;
-  font-family: fontAwesome;
-  font-size: 16px;
-  content: "\f0da";
-  left: 10px; }
-
-.theme-caltech .panel-flexible.home .pane-menu .leaf a {
-  margin-left: 7px; }
-
-.theme-caltech .panel-flexible.home .pane-menu,
 .theme-caltech .panel-flexible.home .pane-views-quick-links-block {
+  padding-bottom: 0;
   padding-top: 0; }
 
 /**
