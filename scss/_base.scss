@@ -1,13 +1,12 @@
 /**
  * BASE ELEMENTS
  */
-/* @TODO Remove `.html` when `theme-caltech` class is removed from theme. */
-.html.theme-caltech h1,
-.html.theme-caltech h2,
-.html.theme-caltech h3,
-.html.theme-caltech h4,
-.html.theme-caltech h5,
-.html.theme-caltech h6 {
+.theme-caltech h1,
+.theme-caltech h2,
+.theme-caltech h3,
+.theme-caltech h4,
+.theme-caltech h5,
+.theme-caltech h6 {
   font-family: $font-family-sans-serif;
 }
 
