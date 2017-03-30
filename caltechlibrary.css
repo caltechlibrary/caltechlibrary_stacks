@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /**
+ * FONTS
+ */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format("woff2"); }
+/**
  * BASE ELEMENTS
  */
 .theme-caltech h1,
@@ -66,6 +74,22 @@
   .theme-caltech #footer img {
     display: inline-block;
     margin-bottom: 0; }
+
+/**
+ * FRIENDS OF THE CALTECH LIBRARIES
+ */
+.friends-button {
+  background-color: #00ad69;
+  border-color: #00ad69;
+  font-size: 1.1rem; }
+  .friends-button::before {
+    content: "credit_card";
+    font-family: "Material Icons";
+    font-size: 1.65rem;
+    margin: 0 0.625rem 0 -0.625rem;
+    vertical-align: top; }
+  .friends-button:hover {
+    background-color: #008a54; }
 
 /**
  * HEADER
