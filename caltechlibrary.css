@@ -76,22 +76,6 @@
     margin-bottom: 0; }
 
 /**
- * FRIENDS OF THE CALTECH LIBRARIES
- */
-.friends-button {
-  background-color: #00ad69;
-  border-color: #00ad69;
-  font-size: 1.1rem; }
-  .friends-button::before {
-    content: "credit_card";
-    font-family: "Material Icons";
-    font-size: 1.65rem;
-    margin: 0 0.625rem 0 -0.625rem;
-    vertical-align: top; }
-  .friends-button:hover {
-    background-color: #008a54; }
-
-/**
  * HEADER
  */
 /**
@@ -477,6 +461,22 @@ img[class*="file-right-"] {
   border: 1px solid #c8c8c8; }
 
 /**
+ * Friends of the Caltech Libraries
+ */
+.friends-button {
+  background-color: #00ad69;
+  border-color: #00ad69;
+  font-size: 1.1rem; }
+  .friends-button::before {
+    content: "credit_card";
+    font-family: "Material Icons";
+    font-size: 1.65rem;
+    margin: 0 0.625rem 0 -0.625rem;
+    vertical-align: top; }
+  .friends-button:hover {
+    background-color: #008a54; }
+
+/**
  * SEARCH
  */
 .theme-caltech:not(.front):not(.page-multisearch):not(.page-eds) #search {
@@ -523,7 +523,10 @@ img[class*="file-right-"] {
     font-weight: normal; }
 
 /**
- * VIEW: DIRECTORY
+ * BESPOKE VIEWS ELEMENTS
+ */
+/**
+ * Staff Directory (staff_directory)
  */
 .not-front .section-wrapper .main-content .view-directory .block-grid-list {
   margin: 0; }

@@ -8,3 +8,22 @@
 .theme-caltech .field-name-body .floor-plans .media-element {
   border: 1px solid $silver;
 }
+
+/**
+ * Friends of the Caltech Libraries
+ */
+.friends-button {
+  background-color: $jade;
+  border-color: $jade;
+  font-size: 1.1rem;
+  &::before {
+    content: "credit_card";
+    font-family: "Material Icons";
+    font-size: 1.65rem;
+    margin: 0 ($column-gutter / 3) 0 ($column-gutter / -3);
+    vertical-align: top;
+  }
+  &:hover {
+    background-color: scale-color($jade, $lightness: -20%);
+  }
+}
