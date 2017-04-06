@@ -1,6 +1,42 @@
 /**
- * BESPOKE VIEWS ELEMENTS
+ * BESPOKE VIEWS
  */
+
+/**
+ * Journals (journals)
+ */
+.view-journals {
+  .views-exposed-widgets {
+    #edit-o-wrapper,
+    #edit-x-wrapper {
+      display: none;
+    }
+    .form-text {
+      margin-bottom: 0;
+    }
+    .description {
+      color: $shuttle;
+      font-size: small;
+    }
+  }
+  .attachment {
+    margin: ($column-gutter / 2) 0;
+  }
+  .view-content > .view-grouping {
+    border-top: 1px solid $silver;
+    padding-top: ($column-gutter / 2);
+    h3 {
+      margin: 0;
+    }
+    .views-row {
+      padding: ($column-gutter / 2) 0;
+    }
+  }
+  .view-grouping-header {
+    float: right;
+    margin-left: ($column-gutter / 2);
+  }
+}
 
 /**
  * Staff Directory (staff_directory)

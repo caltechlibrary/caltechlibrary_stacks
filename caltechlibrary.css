@@ -523,8 +523,32 @@ img[class*="file-right-"] {
     font-weight: normal; }
 
 /**
- * BESPOKE VIEWS ELEMENTS
+ * BESPOKE VIEWS
  */
+/**
+ * Journals (journals)
+ */
+.view-journals .views-exposed-widgets #edit-o-wrapper,
+.view-journals .views-exposed-widgets #edit-x-wrapper {
+  display: none; }
+.view-journals .views-exposed-widgets .form-text {
+  margin-bottom: 0; }
+.view-journals .views-exposed-widgets .description {
+  color: #696b73;
+  font-size: small; }
+.view-journals .attachment {
+  margin: 0.9375rem 0; }
+.view-journals .view-content > .view-grouping {
+  border-top: 1px solid #c8c8c8;
+  padding-top: 0.9375rem; }
+  .view-journals .view-content > .view-grouping h3 {
+    margin: 0; }
+  .view-journals .view-content > .view-grouping .views-row {
+    padding: 0.9375rem 0; }
+.view-journals .view-grouping-header {
+  float: right;
+  margin-left: 0.9375rem; }
+
 /**
  * Staff Directory (staff_directory)
  */
