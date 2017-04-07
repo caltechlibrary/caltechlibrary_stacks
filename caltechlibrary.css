@@ -542,6 +542,7 @@ img[class*="file-right-"] {
   border-top: 1px solid #c8c8c8;
   padding-top: 0.9375rem; }
   .view-journals .view-content > .view-grouping h3 {
+    font-family: "VaudMedium", Arial, sans-serif;
     margin: 0; }
   .view-journals .view-content > .view-grouping .views-row {
     padding: 0.9375rem 0; }
