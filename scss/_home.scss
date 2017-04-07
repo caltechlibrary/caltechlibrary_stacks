@@ -297,14 +297,18 @@
 /**
  * CaltechAUTHORS
  */
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .publication-list {
-  margin-bottom: $column-gutter;
-}
-.theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+3)) {
-  display: none;
-}
-@media only screen and (min-width: 40.0625em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, medium screens only */
-  .theme-caltech .pane-caltechlibrary-customizations-caltechauthors .article:not(:nth-child(-n+2)) {
+.theme-caltech .pane-caltechlibrary-customizations-caltechauthors {
+  .publication-list {
+    margin-bottom: $column-gutter;
+  }
+  // @TODO Adjust this in the theme: modules/_base-module.scss
+  .article:not(:nth-child(-n+2)) {
+    display: block;
+  }
+  .article:not(:nth-child(-n+3)) {
     display: none;
+  }
+  .article:nth-child(2) {
+    margin-bottom: 1.25rem;
   }
 }
