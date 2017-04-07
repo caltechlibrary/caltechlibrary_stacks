@@ -1,5 +1,9 @@
 /**
- * MAIN MENU
+ * NAVIGATION
+ */
+
+/**
+ * Main Menu
  */
 .theme-caltech #header .main-nav {
   border-bottom: 1px solid $orange;
@@ -21,4 +25,22 @@
 .theme-caltech #header .main-nav .content .menu-block-wrapper > ul > li > a.active.active-trail::before {
   bottom: -18px;
   color: $orange;
+}
+
+/**
+ * Sidebar Menu
+ */
+// @TODO This should probably be fixed in the theme: layout/_child-sub-menu.scss
+.theme-caltech .child-submenu ul {
+  li {
+    &:last-child a {
+      border-bottom: 1px solid $mercury;
+    }
+    a {
+      padding: ($column-gutter / 4);
+    }
+  }
+  ul li a {
+    padding-left: $column-gutter;
+  }
 }
