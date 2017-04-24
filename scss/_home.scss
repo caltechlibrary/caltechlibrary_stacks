@@ -152,9 +152,9 @@
 .theme-caltech .home .notices .cerulean {
   background-color: rgba($cerulean, 0.5);
 }
-.theme-caltech .home .beta img {
-  display: inline-block;
-  margin-bottom: 0;
+.theme-caltech .home .notices .orange {
+  background-color: lighten($orange, 40%);
+  border: 1px solid $orange;
 }
 
 /**

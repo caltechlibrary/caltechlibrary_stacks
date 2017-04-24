@@ -214,9 +214,9 @@
 .theme-caltech .home .notices .cerulean {
   background-color: rgba(0, 168, 226, 0.5); }
 
-.theme-caltech .home .beta img {
-  display: inline-block;
-  margin-bottom: 0; }
+.theme-caltech .home .notices .orange {
+  background-color: #fff1ea;
+  border: 1px solid #ff6e1e; }
 
 /**
  * FlexSlider
