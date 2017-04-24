@@ -27,3 +27,6 @@
     background-color: scale-color($jade, $lightness: -20%);
   }
 }
+.webform-confirmation + .links > a[href="/support/give/online"] {
+  display: none;
+}

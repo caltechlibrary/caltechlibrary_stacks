@@ -480,6 +480,9 @@ img[class*="file-right-"] {
   .friends-button:hover {
     background-color: #008a54; }
 
+.webform-confirmation + .links > a[href="/support/give/online"] {
+  display: none; }
+
 /**
  * SEARCH
  */
