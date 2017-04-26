@@ -453,7 +453,9 @@ img[class*="file-right-"] {
 .theme-caltech .child-submenu ul li a {
   padding: 0.46875rem; }
 .theme-caltech .child-submenu ul ul li a {
-  padding-left: 1.875rem; }
+  padding-left: 1.40625rem; }
+.theme-caltech .child-submenu ul ul ul li a {
+  padding-left: 2.8125rem; }
 
 /**
  * BESPOKE PAGE ELEMENTS

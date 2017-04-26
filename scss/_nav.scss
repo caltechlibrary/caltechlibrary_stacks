@@ -40,7 +40,12 @@
       padding: ($column-gutter / 4);
     }
   }
-  ul li a {
-    padding-left: $column-gutter;
+  ul {
+    li a {
+      padding-left: ($column-gutter * 0.75);
+    }
+    ul li a {
+      padding-left: ($column-gutter * 1.5);
+    }
   }
 }
