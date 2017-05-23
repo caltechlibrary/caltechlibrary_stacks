@@ -276,6 +276,14 @@
 .theme-caltech .panel-flexible.home .pane-views-home-slider-block {
   padding: 0; }
 
+.theme-caltech .view-home-slider {
+  position: relative; }
+  .theme-caltech .view-home-slider .views-field-edit-node {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10; }
+
 /**
  * Panel Panes
  */
