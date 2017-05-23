@@ -148,6 +148,35 @@
  */
 .theme-caltech .home .notices .panels-flexible-row-inside {
   background-color: transparent;
+  // Add margin bottom in case there are pane items besides the notices view.
+  .p-item:not(:last-of-type) {
+    margin-bottom: ($column-gutter / 2);
+  }
+}
+// Override general panel pane padding.
+.theme-caltech .home .notices .pane-notices-panel-pane,
+.theme-caltech .home .notices .pane-notices-add-link-panel-pane {
+  padding: 0;
+}
+.theme-caltech .home .notice {
+  padding: ($column-gutter / 2);
+  position: relative;
+  text-align: center;
+  // Add margin between notices.
+  &:not(:last-of-type) {
+    margin-bottom: ($column-gutter / 2);
+  }
+  &.alert {
+    background-color: rgba(red, 0.5);
+  }
+  &.info {
+    background-color: rgba($cerulean, 0.5);
+  }
+  .edit-link {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
 }
 .theme-caltech .home .notices .cerulean {
   background-color: rgba($cerulean, 0.5);
