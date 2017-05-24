@@ -217,17 +217,23 @@
 .theme-caltech .home .notices .pane-notices-add-link-panel-pane {
   padding: 0; }
 
-.theme-caltech .home .notice {
+.theme-caltech .notice {
   padding: 0.9375rem;
   position: relative;
   text-align: center; }
-  .theme-caltech .home .notice:not(:last-of-type) {
+  .theme-caltech .notice:not(:last-of-type) {
     margin-bottom: 0.9375rem; }
-  .theme-caltech .home .notice.alert {
-    background-color: rgba(255, 0, 0, 0.5); }
-  .theme-caltech .home .notice.info {
-    background-color: rgba(0, 168, 226, 0.5); }
-  .theme-caltech .home .notice .edit-link {
+  .theme-caltech .notice.alert {
+    background-color: #f0928b; }
+  .theme-caltech .notice.info {
+    background-color: #49d0ff; }
+  .theme-caltech .notice.warning {
+    background-color: #ffcf53;
+    background-image: none;
+    color: #000; }
+  .theme-caltech .notice .date-display-range {
+    display: inline-block; }
+  .theme-caltech .notice .edit-link {
     left: 0;
     position: absolute;
     top: 0; }

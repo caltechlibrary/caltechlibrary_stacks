@@ -158,7 +158,7 @@
 .theme-caltech .home .notices .pane-notices-add-link-panel-pane {
   padding: 0;
 }
-.theme-caltech .home .notice {
+.theme-caltech .notice {
   padding: ($column-gutter / 2);
   position: relative;
   text-align: center;
@@ -167,10 +167,20 @@
     margin-bottom: ($column-gutter / 2);
   }
   &.alert {
-    background-color: rgba(red, 0.5);
+    background-color: lighten($cinnabar, 20%);
   }
   &.info {
-    background-color: rgba($cerulean, 0.5);
+    background-color: lighten($cerulean, 20%);
+  }
+  &.warning {
+    background-color: lighten($corn, 20%);
+    // Override Drupal `.warning` style.
+    background-image: none;
+    // Override Drupal `.warning` style.
+    color: $black;
+  }
+  .date-display-range {
+    display: inline-block;
   }
   .edit-link {
     left: 0;
