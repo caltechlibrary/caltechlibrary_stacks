@@ -1,0 +1,23 @@
+/**
+ * Styling for the Staff Directory.
+ */
+
+.theme-caltech {
+  .staff-facet {
+    .leaf {
+      list-style: none;
+      margin-left: 0.5rem; /* text-relative units seem most appropriate */
+      input[type="checkbox"] {
+        margin-bottom: 0;
+        margin-right: 0.5rem;  /* text-relative units seem most appropriate */
+      }
+    }
+  }
+  .view-staff {
+    .staff-item {
+      @media #{$small-only} {
+        width: 100%;
+      }
+    }
+  }
+}

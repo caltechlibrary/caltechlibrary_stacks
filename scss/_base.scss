@@ -31,6 +31,12 @@
 }
 .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
   left: 0;
+  margin-left: -($column-gutter / 2);
+  padding-left: 0;
+  & > li {
+    padding-bottom: ($column-gutter / 2);
+    padding-left: 0;
+  }
 }
 
 .theme-caltech .section-wrapper {

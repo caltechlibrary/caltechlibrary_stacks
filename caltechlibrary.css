@@ -37,7 +37,12 @@
   padding-top: 0; }
 
 .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
-  left: 0; }
+  left: 0;
+  margin-left: -0.9375rem;
+  padding-left: 0; }
+  .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] > li {
+    padding-bottom: 0.9375rem;
+    padding-left: 0; }
 
 .theme-caltech .section-wrapper {
   margin: 0; }
@@ -565,6 +570,21 @@ img[class*="file-right-"] {
   .theme-caltech .main-content .search-note .jquery-ui-filter-accordion-header {
     font-size: 1rem;
     font-weight: normal; }
+
+/**
+ * Styling for the Staff Directory.
+ */
+.theme-caltech .staff-facet .leaf {
+  list-style: none;
+  margin-left: 0.5rem;
+  /* text-relative units seem most appropriate */ }
+  .theme-caltech .staff-facet .leaf input[type="checkbox"] {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    /* text-relative units seem most appropriate */ }
+@media only screen and (max-width: 40em) {
+  .theme-caltech .view-staff .staff-item {
+    width: 100%; } }
 
 /**
  * BESPOKE VIEWS
