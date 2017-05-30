@@ -582,6 +582,10 @@ img[class*="file-right-"] {
     margin-bottom: 0;
     margin-right: 0.5rem;
     /* text-relative units seem most appropriate */ }
+.theme-caltech .view-staff .staff-item .edit-link {
+  position: absolute;
+  right: 0;
+  top: 0; }
 @media only screen and (max-width: 40em) {
   .theme-caltech .view-staff .staff-item {
     width: 100%; } }

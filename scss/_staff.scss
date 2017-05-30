@@ -15,6 +15,11 @@
   }
   .view-staff {
     .staff-item {
+      .edit-link {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
       @media #{$small-only} {
         width: 100%;
       }
