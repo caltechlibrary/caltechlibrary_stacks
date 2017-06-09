@@ -13,8 +13,16 @@
       }
     }
   }
-  .view-staff {
+  .staff-list {
     .staff-item {
+      padding-bottom: $column-gutter;
+      @media #{$medium-up} {
+        &:nth-child(even) {
+          .text-wrapper {
+            border-left: thin solid $silver;
+          }
+        }
+      }
       .edit-link {
         position: absolute;
         right: 0;

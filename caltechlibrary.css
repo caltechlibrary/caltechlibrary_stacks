@@ -10,42 +10,35 @@
 /**
  * BASE ELEMENTS
  */
-.theme-caltech h1,
-.theme-caltech h2,
-.theme-caltech h3,
-.theme-caltech h4,
-.theme-caltech h5,
-.theme-caltech h6 {
+.theme-caltech h1, .theme-caltech h2, .theme-caltech h3, .theme-caltech h4, .theme-caltech h5, .theme-caltech h6 {
   font-family: "Vaud", Arial, sans-serif; }
-
-.theme-caltech b,
-.theme-caltech strong {
+.theme-caltech b, .theme-caltech strong {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
-.theme-caltech.not-front .section-wrapper .main-content .content ol,
-.theme-caltech.not-front .section-wrapper .main-content .content ul {
+.theme-caltech ul[class*="-block-grid-"] li {
+  padding: 0 0 0.9375rem; }
+
+.theme-caltech .section-wrapper {
+  margin: 0; }
+
+.theme-caltech.not-front .section-wrapper .main-content .content ol, .theme-caltech.not-front .section-wrapper .main-content .content ul {
   margin-left: 0;
   overflow: hidden;
   padding-bottom: 0.9375rem;
   padding-left: 1.875rem;
   position: relative; }
-
-.theme-caltech.not-front .section-wrapper .main-content .content p + ol,
-.theme-caltech.not-front .section-wrapper .main-content .content p + ul {
+  .theme-caltech.not-front .section-wrapper .main-content .content ol:last-child, .theme-caltech.not-front .section-wrapper .main-content .content ul:last-child {
+    margin-bottom: 0; }
+  .theme-caltech.not-front .section-wrapper .main-content .content ol[class*="-block-grid-"], .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
+    left: 0;
+    margin-left: -0.9375rem;
+    padding-left: 0; }
+.theme-caltech.not-front .section-wrapper .main-content .content p + ol, .theme-caltech.not-front .section-wrapper .main-content .content p + ul {
   padding-bottom: 0;
   padding-top: 0; }
-
-.theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
-  left: 0;
-  margin-left: -0.9375rem;
-  padding-left: 0; }
-  .theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] > li {
-    padding-bottom: 0.9375rem;
-    padding-left: 0; }
-
-.theme-caltech .section-wrapper {
-  margin: 0; }
+.theme-caltech.not-front .section-wrapper .main-content .content .field:last-child {
+  margin-bottom: 0; }
 
 .theme-caltech .ui-widget {
   clear: both;
@@ -582,13 +575,18 @@ img[class*="file-right-"] {
     margin-bottom: 0;
     margin-right: 0.5rem;
     /* text-relative units seem most appropriate */ }
-.theme-caltech .view-staff .staff-item .edit-link {
-  position: absolute;
-  right: 0;
-  top: 0; }
-@media only screen and (max-width: 40em) {
-  .theme-caltech .view-staff .staff-item {
-    width: 100%; } }
+.theme-caltech .staff-list .staff-item {
+  padding-bottom: 1.875rem; }
+  @media only screen and (min-width: 40.0625em) {
+    .theme-caltech .staff-list .staff-item:nth-child(even) .text-wrapper {
+      border-left: thin solid #c8c8c8; } }
+  .theme-caltech .staff-list .staff-item .edit-link {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  @media only screen and (max-width: 40em) {
+    .theme-caltech .staff-list .staff-item {
+      width: 100%; } }
 
 /**
  * BESPOKE VIEWS

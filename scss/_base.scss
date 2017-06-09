@@ -1,46 +1,47 @@
 /**
  * BASE ELEMENTS
  */
-.theme-caltech h1,
-.theme-caltech h2,
-.theme-caltech h3,
-.theme-caltech h4,
-.theme-caltech h5,
-.theme-caltech h6 {
-  font-family: $font-family-sans-serif;
-}
-
-.theme-caltech b,
-.theme-caltech strong {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-
-.theme-caltech.not-front .section-wrapper .main-content .content ol,
-.theme-caltech.not-front .section-wrapper .main-content .content ul {
-  margin-left: 0;
-  overflow: hidden;
-  padding-bottom: ($column-gutter / 2);
-  padding-left: $column-gutter;
-  position: relative;
-}
-.theme-caltech.not-front .section-wrapper .main-content .content p + ol,
-.theme-caltech.not-front .section-wrapper .main-content .content p + ul {
-  padding-bottom: 0;
-  padding-top: 0;
-}
-.theme-caltech.not-front .section-wrapper .main-content .content ul[class*="-block-grid-"] {
-  left: 0;
-  margin-left: -($column-gutter / 2);
-  padding-left: 0;
-  & > li {
-    padding-bottom: ($column-gutter / 2);
-    padding-left: 0;
+.theme-caltech {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
   }
+  b, strong {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.theme-caltech ul[class*="-block-grid-"] li {
+  padding: 0 0 ($column-gutter / 2);
 }
 
 .theme-caltech .section-wrapper {
   margin: 0;
+}
+
+.theme-caltech.not-front .section-wrapper .main-content .content {
+  ol, ul {
+    margin-left: 0;
+    overflow: hidden;
+    padding-bottom: ($column-gutter / 2);
+    padding-left: $column-gutter;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &[class*="-block-grid-"] {
+      left: 0;
+      margin-left: -($column-gutter / 2);
+      padding-left: 0;
+    }
+  }
+  p + ol, p + ul {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .field:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .theme-caltech .ui-widget {
