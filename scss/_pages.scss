@@ -3,6 +3,16 @@
  */
 
 /**
+* Feed: New in CaltechAUTHORS
+*/
+.theme-caltech .publication-list .article .label {
+  background-color: $white;
+  color: $black;
+  font-size: inherit;
+  padding: 0;
+}
+
+/**
  * Floor Plans
  */
 .theme-caltech .field-name-body .floor-plans .media-element {
