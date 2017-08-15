@@ -44,6 +44,14 @@
   clear: both;
   font-family: "Vaud", Arial, sans-serif; }
 
+body.theme-caltech.role-super-administrator .contextual-links-trigger,
+body.theme-caltech.palette_caltech .contextual-links-trigger {
+  display: none; }
+
+body.theme-caltech.role-super-administrator .contextual-links-trigger-active,
+body.theme-caltech.palette_caltech .contextual-links-trigger-active {
+  display: block; }
+
 /**
  * WYSIWYG EDITOR STYLES
  *
