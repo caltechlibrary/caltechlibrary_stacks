@@ -289,21 +289,13 @@
  */
 .theme-caltech .panel-flexible.home .pane-menu {
   padding-top: 0;
-  .menu {
-    margin: 0;
-  }
-  .leaf {
-    font-size: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    &::before {
-      color: $orange;
-    }
-  }
+  @include list-arrows;
 }
 .theme-caltech .panel-flexible.home .pane-views-quick-links-block {
   padding-top: 0;
+}
+.theme-caltech .panel-flexible.home .pane-block.collections-link {
+  @include list-arrows;
 }
 
 /**

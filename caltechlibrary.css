@@ -332,18 +332,40 @@ body.theme-caltech.palette_caltech .contextual-links-trigger-active {
  */
 .theme-caltech .panel-flexible.home .pane-menu {
   padding-top: 0; }
-  .theme-caltech .panel-flexible.home .pane-menu .menu {
+  .theme-caltech .panel-flexible.home .pane-menu ul {
     margin: 0; }
-  .theme-caltech .panel-flexible.home .pane-menu .leaf {
+  .theme-caltech .panel-flexible.home .pane-menu li {
     font-size: 1rem;
     list-style: none;
     margin: 0;
     padding: 0; }
-    .theme-caltech .panel-flexible.home .pane-menu .leaf::before {
-      color: #ff6e1e; }
+    .theme-caltech .panel-flexible.home .pane-menu li::before {
+      color: #ff6e1e;
+      font-family: fontAwesome;
+      font-size: 1rem;
+      content: "\f0da";
+      left: 0.625rem; }
+    .theme-caltech .panel-flexible.home .pane-menu li a {
+      margin-left: 0.625rem; }
 
 .theme-caltech .panel-flexible.home .pane-views-quick-links-block {
   padding-top: 0; }
+
+.theme-caltech .panel-flexible.home .pane-block.collections-link ul {
+  margin: 0; }
+.theme-caltech .panel-flexible.home .pane-block.collections-link li {
+  font-size: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .theme-caltech .panel-flexible.home .pane-block.collections-link li::before {
+    color: #ff6e1e;
+    font-family: fontAwesome;
+    font-size: 1rem;
+    content: "\f0da";
+    left: 0.625rem; }
+  .theme-caltech .panel-flexible.home .pane-block.collections-link li a {
+    margin-left: 0.625rem; }
 
 /**
  * Services
